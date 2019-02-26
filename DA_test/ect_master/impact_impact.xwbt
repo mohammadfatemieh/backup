@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\HU\ect_master\ect_master\impact.xsl
+OUTFILE=D:\HU\ect_master\ect_master\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\HU\ect_master\ect_master
+LICENSE=iMPACT
+USER_INFO=iMPACT

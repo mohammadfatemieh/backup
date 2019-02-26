@@ -1,0 +1,648 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Reading design: ect_master.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ect_master.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ect_master"
+Output Format                      : NGC
+Target Device                      : xc6slx4-2-cpg196
+
+---- Source Options
+Top Module Name                    : ect_master
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\HU\ect_master\ect_master\ipcore_dir\microblaze_mcs.vhd" into library work
+Parsing VHDL file "D:\HU\ect_master\ect_master\gpo.vhd" into library work
+Parsing entity <top>.
+Parsing architecture <Behavioral> of entity <top>.
+Parsing VHDL file "D:\HU\ect_master\ect_master\AD9240.vhd" into library work
+Parsing entity <ad9240>.
+Parsing architecture <Behavioral> of entity <ad9240>.
+Parsing VHDL file "D:\HU\ect_master\ect_master\ect_master.vhd" into library work
+Parsing entity <ect_master>.
+Parsing architecture <Behavioral> of entity <ect_master>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <ect_master> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:89 - "D:\HU\ect_master\ect_master\ect_master.vhd" Line 56: <microblaze_mcs> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:1127 - "D:\HU\ect_master\ect_master\ect_master.vhd" Line 158: Assignment to busin ignored, since the identifier is never used
+
+Elaborating entity <top> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\HU\ect_master\ect_master\gpo.vhd" Line 45: din0 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\HU\ect_master\ect_master\gpo.vhd" Line 51: din0 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\HU\ect_master\ect_master\gpo.vhd" Line 57: din1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\HU\ect_master\ect_master\gpo.vhd" Line 65: din1 should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "D:\HU\ect_master\ect_master\gpo.vhd" Line 62. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "D:\HU\ect_master\ect_master\gpo.vhd" Line 77: count should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\HU\ect_master\ect_master\gpo.vhd" Line 78: clkb should be on the sensitivity list of the process
+
+Elaborating entity <ad9240> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "D:\HU\ect_master\ect_master\ect_master.vhd" Line 104: Net <IO_Read_Data[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\HU\ect_master\ect_master\ect_master.vhd" Line 106: Net <UART_Rx> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ect_master>.
+    Related source file is "D:\HU\ect_master\ect_master\ect_master.vhd".
+WARNING:Xst:647 - Input <pwait> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\HU\ect_master\ect_master\ect_master.vhd" line 135: Output port <IO_Byte_Enable> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\HU\ect_master\ect_master\ect_master.vhd" line 135: Output port <UART_Tx> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\HU\ect_master\ect_master\ect_master.vhd" line 135: Output port <FIT1_Toggle> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\HU\ect_master\ect_master\ect_master.vhd" line 244: Output port <ad9240clk> of the instance <Inst_ad9240> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <IO_Read_Data<31:16>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <UART_Rx> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <IO_Read_Data<15>>.
+    Found 1-bit register for signal <IO_Read_Data<14>>.
+    Found 1-bit register for signal <IO_Read_Data<13>>.
+    Found 1-bit register for signal <IO_Read_Data<12>>.
+    Found 1-bit register for signal <IO_Read_Data<11>>.
+    Found 1-bit register for signal <IO_Read_Data<10>>.
+    Found 1-bit register for signal <IO_Read_Data<9>>.
+    Found 1-bit register for signal <IO_Read_Data<8>>.
+    Found 1-bit register for signal <IO_Read_Data<7>>.
+    Found 1-bit register for signal <IO_Read_Data<6>>.
+    Found 1-bit register for signal <IO_Read_Data<5>>.
+    Found 1-bit register for signal <IO_Read_Data<4>>.
+    Found 1-bit register for signal <IO_Read_Data<3>>.
+    Found 1-bit register for signal <IO_Read_Data<2>>.
+    Found 1-bit register for signal <IO_Read_Data<1>>.
+    Found 1-bit register for signal <IO_Read_Data<0>>.
+    Found 16-bit register for signal <busOut>.
+    Found 1-bit register for signal <astb>.
+    Found 1-bit register for signal <dstb>.
+    Found 1-bit register for signal <pwr>.
+    Found 1-bit tristate buffer for signal <pdb<15>> created at line 159
+    Found 1-bit tristate buffer for signal <pdb<14>> created at line 159
+    Found 1-bit tristate buffer for signal <pdb<13>> created at line 159
+    Found 1-bit tristate buffer for signal <pdb<12>> created at line 159
+    Found 1-bit tristate buffer for signal <pdb<11>> created at line 159
+    Found 1-bit tristate buffer for signal <pdb<10>> created at line 159
+    Found 1-bit tristate buffer for signal <pdb<9>> created at line 159
+    Found 1-bit tristate buffer for signal <pdb<8>> created at line 159
+    Found 1-bit tristate buffer for signal <pdb<7>> created at line 159
+    Found 1-bit tristate buffer for signal <pdb<6>> created at line 159
+    Found 1-bit tristate buffer for signal <pdb<5>> created at line 159
+    Found 1-bit tristate buffer for signal <pdb<4>> created at line 159
+    Found 1-bit tristate buffer for signal <pdb<3>> created at line 159
+    Found 1-bit tristate buffer for signal <pdb<2>> created at line 159
+    Found 1-bit tristate buffer for signal <pdb<1>> created at line 159
+    Found 1-bit tristate buffer for signal <pdb<0>> created at line 159
+    Summary:
+	inferred  35 D-type flip-flop(s).
+	inferred  16 Tristate(s).
+Unit <ect_master> synthesized.
+
+Synthesizing Unit <top>.
+    Related source file is "D:\HU\ect_master\ect_master\gpo.vhd".
+WARNING:Xst:647 - Input <wr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <curstate>.
+    Found 26-bit register for signal <count>.
+    Found finite state machine <FSM_0> for signal <curstate>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 3                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clkb (rising_edge)                             |
+    | Power Up State     | st0                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 26-bit adder for signal <count[25]_GND_24_o_add_3_OUT> created at line 75.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <ad9240>.
+    Related source file is "D:\HU\ect_master\ect_master\AD9240.vhd".
+WARNING:Xst:647 - Input <otr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 14-bit register for signal <adout>.
+    Found 14-bit register for signal <data_out>.
+    Summary:
+	inferred  28 D-type flip-flop(s).
+Unit <ad9240> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 26-bit adder                                          : 1
+# Registers                                            : 23
+ 1-bit register                                        : 19
+ 14-bit register                                       : 2
+ 16-bit register                                       : 1
+ 26-bit register                                       : 1
+# Multiplexers                                         : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 16
+ 1-bit tristate buffer                                 : 16
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/microblaze_mcs.ngc>.
+Loading core <microblaze_mcs> for timing and area information for instance <mcs_0>.
+WARNING:Xst:1710 - FF/Latch <IO_Read_Data_1> (without init value) has a constant value of 0 in block <ect_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IO_Read_Data_0> (without init value) has a constant value of 0 in block <ect_master>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <top>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <top> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 63
+ Flip-Flops                                            : 63
+# Multiplexers                                         : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <IO_Read_Data_1> (without init value) has a constant value of 0 in block <ect_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IO_Read_Data_0> (without init value) has a constant value of 0 in block <ect_master>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <curstate[1:3]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ st0   | 001
+ st1   | 010
+ st2   | 100
+-------------------
+WARNING:Xst:2677 - Node <Inst_top/count_3> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_4> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_5> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_6> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_7> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_8> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_9> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_10> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_11> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_12> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_13> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_14> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_15> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_16> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_17> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_18> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_19> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_20> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_21> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_22> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_23> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_24> of sequential type is unconnected in block <ect_master>.
+WARNING:Xst:2677 - Node <Inst_top/count_25> of sequential type is unconnected in block <ect_master>.
+
+Optimizing unit <ad9240> ...
+
+Optimizing unit <ect_master> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ect_master, actual ratio is 23.
+INFO:Xst:2260 - The FF/Latch <U0/ilmb/POR_FF_I> in Unit <mcs_0> is equivalent to the following FF/Latch : <U0/dlmb/POR_FF_I> 
+INFO:Xst:2260 - The FF/Latch <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[31].fdr_i> in Unit <mcs_0> is equivalent to the following 31 FFs/Latches : <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[30].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[29].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[28].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[27].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[26].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[25].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[24].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[23].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[22].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[21].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[20].fdr_i>
+   <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[19].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[18].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[17].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[16].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[15].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[14].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[13].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[12].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[11].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[10].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[9].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[8].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[7].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[6].fdr_i>
+   <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[5].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[4].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[3].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[2].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[1].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[0].fdr_i> 
+INFO:Xst:2260 - The FF/Latch <U0/ilmb/POR_FF_I> in Unit <mcs_0> is equivalent to the following FF/Latch : <U0/dlmb/POR_FF_I> 
+INFO:Xst:2260 - The FF/Latch <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[31].fdr_i> in Unit <mcs_0> is equivalent to the following 31 FFs/Latches : <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[30].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[29].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[28].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[27].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[26].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[25].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[24].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[23].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[22].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[21].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[20].fdr_i>
+   <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[19].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[18].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[17].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[16].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[15].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[14].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[13].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[12].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[11].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[10].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[9].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[8].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[7].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[6].fdr_i>
+   <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[5].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[4].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[3].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[2].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[1].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[0].fdr_i> 
+
+Final Macro Processing ...
+
+Processing Unit <ect_master> :
+	Found 2-bit shift register for signal <Inst_top/curstate_FSM_FFd1>.
+	Found 2-bit shift register for signal <Inst_ad9240/adout_13>.
+	Found 2-bit shift register for signal <Inst_ad9240/adout_12>.
+	Found 2-bit shift register for signal <Inst_ad9240/adout_11>.
+	Found 2-bit shift register for signal <Inst_ad9240/adout_10>.
+	Found 2-bit shift register for signal <Inst_ad9240/adout_9>.
+	Found 2-bit shift register for signal <Inst_ad9240/adout_8>.
+	Found 2-bit shift register for signal <Inst_ad9240/adout_7>.
+	Found 2-bit shift register for signal <Inst_ad9240/adout_6>.
+	Found 2-bit shift register for signal <Inst_ad9240/adout_5>.
+	Found 2-bit shift register for signal <Inst_ad9240/adout_4>.
+	Found 2-bit shift register for signal <Inst_ad9240/adout_3>.
+	Found 2-bit shift register for signal <Inst_ad9240/adout_2>.
+	Found 2-bit shift register for signal <Inst_ad9240/adout_1>.
+	Found 2-bit shift register for signal <Inst_ad9240/adout_0>.
+Unit <ect_master> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 37
+ Flip-Flops                                            : 37
+# Shift Registers                                      : 15
+ 2-bit shift register                                  : 15
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ect_master.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 790
+#      GND                         : 2
+#      INV                         : 18
+#      LUT1                        : 6
+#      LUT2                        : 39
+#      LUT3                        : 76
+#      LUT4                        : 195
+#      LUT5                        : 40
+#      LUT6                        : 123
+#      LUT6_2                      : 90
+#      MULT_AND                    : 3
+#      MUXCY                       : 2
+#      MUXCY_L                     : 74
+#      MUXF5                       : 66
+#      MUXF6                       : 1
+#      VCC                         : 2
+#      XORCY                       : 53
+# FlipFlops/Latches                : 540
+#      FD                          : 117
+#      FDE                         : 112
+#      FDR                         : 101
+#      FDRE                        : 185
+#      FDS                         : 9
+#      FDSE                        : 16
+# RAMS                             : 72
+#      RAM32X1D                    : 64
+#      RAMB16BWER                  : 8
+# Shift Registers                  : 74
+#      SRL16E                      : 57
+#      SRLC16E                     : 17
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 45
+#      IBUF                        : 15
+#      OBUF                        : 14
+#      OBUFT                       : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4cpg196-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             540  out of   4800    11%  
+ Number of Slice LUTs:                  789  out of   2400    32%  
+    Number used as Logic:               587  out of   2400    24%  
+    Number used as Memory:              202  out of   1200    16%  
+       Number used as RAM:              128
+       Number used as SRL:               74
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1055
+   Number with an unused Flip Flop:     515  out of   1055    48%  
+   Number with an unused LUT:           266  out of   1055    25%  
+   Number of fully used LUT-FF pairs:   274  out of   1055    25%  
+   Number of unique control sets:        41
+
+IO Utilization: 
+ Number of IOs:                          47
+ Number of bonded IOBs:                  45  out of    106    42%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                8  out of     12    66%  
+    Number using Block RAM only:          8
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)           | Load  |
+-----------------------------------+---------------------------------+-------+
+clk                                | IBUF+BUFG                       | 683   |
+Inst_top/count_2                   | NONE(Inst_top/curstate_FSM_FFd3)| 3     |
+-----------------------------------+---------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 7.968ns (Maximum Frequency: 125.508MHz)
+   Minimum input arrival time before clock: 2.009ns
+   Maximum output required time after clock: 5.638ns
+   Maximum combinational path delay: 4.921ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.968ns (frequency: 125.508MHz)
+  Total number of paths / destination ports: 133489 / 2389
+-------------------------------------------------------------------------
+Delay:               7.968ns (Levels of Logic = 4)
+  Source:            mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.Buffer_DFFs[1].FDS_I (FF)
+  Destination:       mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[15].Operand_Select_Bit_I/Op2_DFF (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.Buffer_DFFs[1].FDS_I to mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[15].Operand_Select_Bit_I/Op2_DFF
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             47   0.525   1.770  U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.Buffer_DFFs[1].FDS_I (U0/microblaze_I/MicroBlaze_Core_I/Area.buffer_Addr<1>)
+     SRL16E:A2->Q         51   0.254   2.105  U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[16].SRL16E_I/Use_unisim.MB_SRL16E_I1 (U0/microblaze_I/MicroBlaze_Core_I/Area.imm_Value<0>)
+     LUT4:I0->O            1   0.254   0.958  U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.Res_Forward2_LUT1 (U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.res_forward2_1)
+     LUT4:I0->O           32   0.254   1.520  U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.Res_Forward2_LUT4 (U0/microblaze_I/MicroBlaze_Core_I/Area.res_Forward2)
+     LUT6:I5->O            1   0.254   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Mmux_op2_I11 (U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/op2_I)
+     FDE:D                     0.074          U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Op2_DFF
+    ----------------------------------------
+    Total                      7.968ns (1.615ns logic, 6.353ns route)
+                                       (20.3% logic, 79.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_top/count_2'
+  Clock period: 1.820ns (frequency: 549.451MHz)
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Delay:               1.820ns (Levels of Logic = 0)
+  Source:            Inst_top/Mshreg_curstate_FSM_FFd1 (FF)
+  Destination:       Inst_top/curstate_FSM_FFd1 (FF)
+  Source Clock:      Inst_top/count_2 rising
+  Destination Clock: Inst_top/count_2 rising
+
+  Data Path: Inst_top/Mshreg_curstate_FSM_FFd1 to Inst_top/curstate_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRLC16E:CLK->Q        1   1.746   0.000  Inst_top/Mshreg_curstate_FSM_FFd1 (Inst_top/Mshreg_curstate_FSM_FFd1)
+     FDE:D                     0.074          Inst_top/curstate_FSM_FFd1
+    ----------------------------------------
+    Total                      1.820ns (1.820ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              2.009ns (Levels of Logic = 1)
+  Source:            din<13> (PAD)
+  Destination:       Inst_ad9240/Mshreg_adout_13 (FF)
+  Destination Clock: clk rising
+
+  Data Path: din<13> to Inst_ad9240/Mshreg_adout_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  din_13_IBUF (din_13_IBUF)
+     SRLC16E:D                -0.060          Inst_ad9240/Mshreg_adout_13
+    ----------------------------------------
+    Total                      2.009ns (1.328ns logic, 0.681ns route)
+                                       (66.1% logic, 33.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_top/count_2'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              5.589ns (Levels of Logic = 2)
+  Source:            Inst_top/curstate_FSM_FFd1 (FF)
+  Destination:       gpo_dout<7> (PAD)
+  Source Clock:      Inst_top/count_2 rising
+
+  Data Path: Inst_top/curstate_FSM_FFd1 to gpo_dout<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             10   0.525   1.236  Inst_top/curstate_FSM_FFd1 (Inst_top/curstate_FSM_FFd1)
+     LUT3:I0->O            1   0.235   0.681  Inst_top/Mmux_Dout<0>1 (gpo_dout_0_OBUF)
+     OBUF:I->O                 2.912          gpo_dout_0_OBUF (gpo_dout<0>)
+    ----------------------------------------
+    Total                      5.589ns (3.672ns logic, 1.917ns route)
+                                       (65.7% logic, 34.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 51 / 27
+-------------------------------------------------------------------------
+Offset:              5.638ns (Levels of Logic = 3)
+  Source:            mcs_0/U0/iomodule_0/IO_Write_Strobe (FF)
+  Destination:       pdb<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: mcs_0/U0/iomodule_0/IO_Write_Strobe to pdb<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.525   0.765  U0/iomodule_0/IO_Write_Strobe (IO_Write_Strobe)
+     end scope: 'mcs_0:IO_Write_Strobe'
+     INV:I->O             16   0.255   1.181  IO_Write_Strobe_inv1_INV_0 (IO_Write_Strobe_inv)
+     OBUFT:T->O                2.912          pdb_15_OBUFT (pdb<15>)
+    ----------------------------------------
+    Total                      5.638ns (3.692ns logic, 1.946ns route)
+                                       (65.5% logic, 34.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               4.921ns (Levels of Logic = 2)
+  Source:            clk (PAD)
+  Destination:       ADCLK (PAD)
+
+  Data Path: clk to ADCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  clk_IBUF (ADCLK_OBUF)
+     OBUF:I->O                 2.912          ADCLK_OBUF (ADCLK)
+    ----------------------------------------
+    Total                      4.921ns (4.240ns logic, 0.681ns route)
+                                       (86.2% logic, 13.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Inst_top/count_2
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+Inst_top/count_2|    1.820|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.968|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.29 secs
+ 
+--> 
+
+Total memory usage is 298320 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   42 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

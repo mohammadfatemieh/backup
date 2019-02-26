@@ -1,0 +1,1 @@
+vhdtdtfi -prj ect_master -o D:/HU/ect_master/ect_master/ad9240.vhi -module ad9240 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work AD9240.vhd 

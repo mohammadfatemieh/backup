@@ -1,0 +1,10 @@
+
+#ifndef TJUET_H_
+#define TJUET_H_
+
+
+
+#endif /* TJUET_H_ */
+
+#define aAddr 0x101010
+#define aData 0x1000

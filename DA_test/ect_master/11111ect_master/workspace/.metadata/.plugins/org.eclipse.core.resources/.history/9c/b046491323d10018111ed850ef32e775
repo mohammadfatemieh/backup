@@ -1,0 +1,100 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xparameters.h"
+#include "xiomodule.h"
+#define adlen 1000
+u32 var;
+u16 addb[adlen];
+
+void testAD(void)
+{	u16 din;
+XIOModule iomodule;
+XIOModule_Initialize(&iomodule, XPAR_IOMODULE_0_DEVICE_ID);
+XIOModule_Start(&iomodule);
+	din=XIOModule_IoReadHalfword(&iomodule, 0x1020);
+	XIOModule_IoWriteHalfword(&iomodule, 0x1000, din);
+}
+
+void readAD(void)
+{
+	XIOModule iomodule;
+	microblaze_enable_interrupts();//使能中断功能
+	XIOModule_Initialize(&iomodule, XPAR_IOMODULE_0_DEVICE_ID);
+	XIOModule_Start(&iomodule);
+	u16 var;
+	u16 din;
+	for (var = 0; var<adlen; var++){
+		din=XIOModule_IoReadHalfword(&iomodule, 0x1020);//0x1020是AD的地址
+		addb[var]=din;
+//		XIOModule_IoWriteHalfword(&iomodule, 0x1000, addb[10]);
+	}
+}
+void Uart_SendWord(Xint16 data)
+{
+    init_platform();
+	XIOModule iomodule;
+	microblaze_enable_interrupts();//使能中断功能
+	XIOModule_Initialize(&iomodule, XPAR_IOMODULE_0_DEVICE_ID);
+	XIOModule_Start(&iomodule);
+
+	Xuint8 sdata[2]={0};
+	*sdata=data>>8;
+	*(sdata+1)=data;
+	Xuint8 index=0;
+	Xuint8 count;
+	while (index < 2)
+	{
+		count = XIOModule_Send(&iomodule, &sdata[index], 2 - index);
+		index += count;
+	}
+}
+
+
+int main()
+{
+
+    init_platform();
+	XIOModule iomodule;
+	microblaze_enable_interrupts();//使能中断功能
+	XIOModule_Initialize(&iomodule, XPAR_IOMODULE_0_DEVICE_ID);
+	XIOModule_Start(&iomodule);
+	//while(1){
+    readAD();//执行一次，采样值为adlen个
+    //}
+    u16 data;
+    int j;
+    for(j = 0; j < 1000; j++){
+     Uart_SendWord(addb[j]);
+     Uart_SendWord(0xffff);
+//     Uart_SendWord(0);
+     }
+    Uart_SendWord(0xf0ff);
+    Uart_SendWord(0xf0ff);
+    Uart_SendWord(0xf0ff);
+    Uart_SendWord(0xf0ff);//}
+//    Uart_SendWord(0xff);
+    /*const int count = 2;//1次发送2个16进制数
+    u32 var1;
+    int index = 0;
+    u32 var2;
+    u32 var3;
+    u32 data;
+    int j;
+
+    u8 msg[16]={0};
+    for(var1 = 0; var1 < 10; var1++){//先发10组，，，读取全部AD数据
+    addb[1]=1111111111111111;
+    for(j = 0; j < 2; j++){
+       	msg[j] = 10010011;
+    }
+    while (index < count) {
+    data = XIOModule_Send(&iomodule,&msg[index] , count - index);//data是已发送的字节数
+    index += data;
+    }
+    index = 0;
+    outbyte('0');
+    }
+    */
+	cleanup_platform();
+	return 0;
+}

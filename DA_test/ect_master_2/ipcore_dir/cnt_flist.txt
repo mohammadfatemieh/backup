@@ -1,0 +1,17 @@
+# Output products list for <cnt>
+_xmsgs\pn_parser.xmsgs
+cnt.asy
+cnt.gise
+cnt.ngc
+cnt.sym
+cnt.vhd
+cnt.vho
+cnt.xco
+cnt.xise
+cnt\doc\c_counter_binary_v11_0_readme.txt
+cnt\doc\c_counter_binary_v11_0_vinfo.html
+cnt\doc\ds215_counter.pdf
+cnt_flist.txt
+cnt_xmdf.tcl
+core_resources.txt
+gui_latency.txt

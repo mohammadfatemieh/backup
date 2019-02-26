@@ -1,0 +1,20 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: mini-ET.PcbDoc   2017/12/5  20:48:35
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : TopLayer to BottomLayer
+ASCII Plated RoundHoles File : mini-ET-Plated.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      20mil (0.508mm)                                           Round             98        PTH        37.55inch (953.81mm)
+T2      28mil (0.711mm)                                           Round             2         PTH        0.54inch (13.65mm)
+T3      33mil (0.85mm)                                            Round             10        PTH        3.74inch (94.97mm)
+T4      35mil (0.9mm)                                             Round             66        PTH        10.51inch (266.90mm)
+T5      37mil (0.94mm)                                            Round             96        PTH        12.47inch (316.61mm)
+T6      59mil (1.5mm)                                             Round             5         PTH        0.67inch (17.07mm)
+T7      110mil (2.794mm)                                          Round             4         PTH        15.60inch (396.24mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              281
+
+Total Processing Time (hh:mm:ss) : 00:00:00

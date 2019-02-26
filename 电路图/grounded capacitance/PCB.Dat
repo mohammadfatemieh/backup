@@ -1,0 +1,8 @@
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~PCB_cap.PrjPCB|ReportField=ProjectFullPath~C:\Users\huyafeng\Desktop\PCB1\PCB_cap.PrjPCB|ReportField=Title~Bill of Materials For PCB Document [PCB.PcbDoc]|ReportField=TotalQuantity~13|ReportField=ReportTime~16:43:41|ReportField=ReportDate~2018/3/26|ReportField=ReportDateTime~2018/3/26 16:43:41|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=DataSourceFileName~PCB.PcbDoc|ReportField=DataSourceFullPath~C:\Users\huyafeng\Desktop\PCB1\PCB.PcbDoc
+100nF(104) 10% 50V|ÌùÆ¬µçÈÝ|C1, C3, C4|LC-0805_C|0805 100nF(104) 10% 50V|3
+1uF (105) 10% 50V|ÌùÆ¬µçÈÝ|C7, C8|LC-0805_C|0805 1uF (105) 10% 50V|2
+SMB|SMB Straight Connector|P1, P2|SMB_V-RJ45|SMB|2
+1K¦¸ (1001) ¡À1%|ÌùÆ¬µç×è|R1|LC-0805_R|0805 1K¦¸ (1001) 1%|1
+100K¦¸ (1003) ¡À1%|ÌùÆ¬µç×è|R2, R5|LC-0805_R|0805 100K¦¸ (1003) 1%|2
+AD8066AR|Double Channel Low Power Operational Amplifier, 145 MHz BW, 180 V/us SR, Industrial, 8-pin SOIC (R-8), Tube|U1, U2|ADI-R-8_N|AD8066AR|2
+AD844AN|Single Channel Wide Bandwidth Operational Amplifier, 60 MHz BW, 2 KV/us SR, Industrial, 8-pin DIP (N-8), Tube|U3|ADI-N-8|AD844AN|1

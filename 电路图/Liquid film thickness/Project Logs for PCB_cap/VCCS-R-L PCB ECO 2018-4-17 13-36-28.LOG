@@ -1,0 +1,6 @@
+Removed Member From Class: ClassName=Sheet Member=U5
+Added Pin To Net: NetName=-12V Pin=U3-4
+Added Pin To Net: NetName=+12V Pin=U3-7
+Added Pin To Net: NetName=GND Pin=U4-3
+Added Member To Class: ClassName=Sheet Member=Component U3 AD844AN
+Added Member To Class: ClassName=Rectification filter Member=Component U4 AD8066AR

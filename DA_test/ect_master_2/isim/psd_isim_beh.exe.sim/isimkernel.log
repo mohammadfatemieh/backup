@@ -1,0 +1,28 @@
+Command line:
+   psd_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56639
+
+Sat Nov 03 20:42:53 2018
+
+
+ Elaboration Time: 0.1875 sec
+
+ Current Memory Usage: 853.766 Meg
+
+ Total Signals          : 466
+ Total Nets             : 1708
+ Total Signal Drivers   : 211
+ Total Blocks           : 193
+ Total Primitive Blocks : 153
+ Total Processes        : 191
+ Total Traceable Variables  : 519
+ Total Scalar Nets and Variables : 3560
+
+ Total Simulation Time: 0.234375 sec
+
+ Current Memory Usage: 853.766 Meg
+
+Sat Nov 03 20:43:20 2018
+

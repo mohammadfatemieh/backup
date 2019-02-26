@@ -1,0 +1,34 @@
+Removed Pin From Net: NetName=AGND Pin=C15-1
+Removed Pin From Net: NetName=-12V Pin=C15-2
+Removed Pin From Net: NetName=+12V Pin=C22-1
+Removed Pin From Net: NetName=AGND Pin=C22-2
+Removed Pin From Net: NetName=-2.5V Pin=D11-1
+Removed Pin From Net: NetName=+2.5V Pin=D11-2
+Removed Pin From Net: NetName=NetC10_2 Pin=D11-3
+Removed Pin From Net: NetName=KEY Pin=R30-1
+Removed Pin From Net: NetName=VCCO Pin=R30-2
+Removed Pin From Net: NetName=+2.5V Pin=R31-1
+Removed Pin From Net: NetName=+5V Pin=R31-2
+Removed Pin From Net: NetName=-5V Pin=R32-1
+Removed Pin From Net: NetName=-2.5V Pin=R32-2
+Removed Pin From Net: NetName=DGND Pin=R33-1
+Removed Pin From Net: NetName=AGND Pin=R33-2
+Removed Member From Class: ClassName=CVTOP Member=C15
+Removed Member From Class: ClassName=CVTOP Member=C22
+Added Component: Designator=D11(LC-SOT-23(SOT-23-3))
+Added Component: Designator=R30(LC-0805_R)
+Added Component: Designator=R31(LC-0805_R)
+Added Component: Designator=R32(LC-0805_R)
+Added Component: Designator=R33(LC-0805_R)
+Added Pin To Net: NetName=-2.5V Pin=D11-1
+Added Pin To Net: NetName=+2.5V Pin=D11-2
+Added Pin To Net: NetName=NetC10_2 Pin=D11-3
+Added Pin To Net: NetName=KEY Pin=R30-1
+Added Pin To Net: NetName=VCCO Pin=R30-2
+Added Pin To Net: NetName=+2.5V Pin=R31-1
+Added Pin To Net: NetName=+5V Pin=R31-2
+Added Pin To Net: NetName=-5V Pin=R32-1
+Added Pin To Net: NetName=-2.5V Pin=R32-2
+Added Pin To Net: NetName=DGND Pin=R33-1
+Added Pin To Net: NetName=AGND Pin=R33-2
+Added Member To Class: ClassName=CVTOP Member=Component R19 1K¦¸ (1001) ¡À1%

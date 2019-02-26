@@ -1,0 +1,221 @@
+Removed Pin From Net: NetName=-5V Pin=C30-2
+Removed Pin From Net: NetName=+12V Pin=C40-1
+Removed Pin From Net: NetName=AGND Pin=C40-2
+Removed Pin From Net: NetName=AGND Pin=C41-1
+Removed Pin From Net: NetName=-12V Pin=C41-2
+Removed Pin From Net: NetName=GCLK_N Pin=J2-11
+Removed Pin From Net: NetName=GCLK_P Pin=J2-12
+Removed Pin From Net: NetName=GCLK_P Pin=P10-C16
+Removed Pin From Net: NetName=GCLK_N Pin=P10-C17
+Removed Pin From Net: NetName=AGND Pin=R13-1
+Removed Member From Class: ClassName=CVTOP Member=C40
+Removed Member From Class: ClassName=CVTOP Member=C41
+Removed Member From Class: ClassName=CVTOP Member=R43
+Removed Member From Class: ClassName=CVTOP Member=R44
+Removed Member From Class: ClassName=CVTOP Member=R56
+Removed Member From Class: ClassName=CVTOP Member=R57
+Change Component DesignItemId : Designator=C30 Old DesignItemId=3216 10uF (106) 10% 16V New DesignItemId=0805 470nF (474) 10% 50V
+Change Component Footprint: Designator=C30 Old Footprint=LC-CASE-A_3216 New Footprint=LC-0805_C
+Change Component Comment : Designator=C30 Old Comment=10uF (106) ㊣10% 16V New Comment=470nF (474) 10% 50V
+Change Component Designator: OldDesignator=C24 NewDesignator=C1
+Change Component Designator: OldDesignator=C25 NewDesignator=C2
+Change Component Designator: OldDesignator=C26 NewDesignator=C3
+Change Component Designator: OldDesignator=C27 NewDesignator=C4
+Change Component Designator: OldDesignator=C28 NewDesignator=C5
+Change Component Designator: OldDesignator=C29 NewDesignator=C6
+Change Component Designator: OldDesignator=C31 NewDesignator=C7
+Change Component Designator: OldDesignator=C32 NewDesignator=C8
+Change Component Designator: OldDesignator=C33 NewDesignator=C9
+Change Component Designator: OldDesignator=C34 NewDesignator=C10
+Change Component Designator: OldDesignator=C35 NewDesignator=C11
+Change Component Designator: OldDesignator=C36 NewDesignator=C12
+Change Component Designator: OldDesignator=C37 NewDesignator=C13
+Change Component Designator: OldDesignator=C38 NewDesignator=C15
+Change Component Designator: OldDesignator=C39 NewDesignator=C23
+Change Component Designator: OldDesignator=C42 NewDesignator=C24
+Change Component Designator: OldDesignator=C43 NewDesignator=C29
+Change Component Designator: OldDesignator=C44 NewDesignator=C26
+Change Component Designator: OldDesignator=C45 NewDesignator=C27
+Change Component Designator: OldDesignator=D1 NewDesignator=D11
+Change Component Designator: OldDesignator=D2 NewDesignator=D1
+Change Component Designator: OldDesignator=D3 NewDesignator=D2
+Change Component Designator: OldDesignator=D4 NewDesignator=D3
+Change Component Designator: OldDesignator=D5 NewDesignator=D4
+Change Component Designator: OldDesignator=D6 NewDesignator=D5
+Change Component Designator: OldDesignator=D7 NewDesignator=D6
+Change Component Designator: OldDesignator=D8 NewDesignator=D7
+Change Component Designator: OldDesignator=D9 NewDesignator=D8
+Change Component Designator: OldDesignator=D10 NewDesignator=D9
+Change Component Designator: OldDesignator=D11 NewDesignator=D10
+Change Component Designator: OldDesignator=J1 NewDesignator=J2
+Change Component Designator: OldDesignator=J2 NewDesignator=J1
+Change Component Designator: OldDesignator=R14 NewDesignator=R1
+Change Component Designator: OldDesignator=R15 NewDesignator=R5
+Change Component Designator: OldDesignator=R16 NewDesignator=R7
+Change Component Designator: OldDesignator=R17 NewDesignator=R9
+Change Component Designator: OldDesignator=R18 NewDesignator=R11
+Change Component Designator: OldDesignator=R19 NewDesignator=R13
+Change Component Designator: OldDesignator=R20 NewDesignator=R14
+Change Component Designator: OldDesignator=R21 NewDesignator=R17
+Change Component Designator: OldDesignator=R22 NewDesignator=R21
+Change Component Designator: OldDesignator=R23 NewDesignator=R22
+Change Component Designator: OldDesignator=R24 NewDesignator=R23
+Change Component Designator: OldDesignator=R26 NewDesignator=R33
+Change Component Designator: OldDesignator=R27 NewDesignator=R40
+Change Component Designator: OldDesignator=R28 NewDesignator=R32
+Change Component Designator: OldDesignator=R29 NewDesignator=R31
+Change Component Designator: OldDesignator=R30 NewDesignator=R2
+Change Component Designator: OldDesignator=R31 NewDesignator=R3
+Change Component Designator: OldDesignator=R32 NewDesignator=R4
+Change Component Designator: OldDesignator=R33 NewDesignator=R6
+Change Component Designator: OldDesignator=R34 NewDesignator=R8
+Change Component Designator: OldDesignator=R35 NewDesignator=R10
+Change Component Designator: OldDesignator=R36 NewDesignator=R12
+Change Component Designator: OldDesignator=R37 NewDesignator=R15
+Change Component Designator: OldDesignator=R38 NewDesignator=R16
+Change Component Designator: OldDesignator=R39 NewDesignator=R18
+Change Component Designator: OldDesignator=R40 NewDesignator=R19
+Change Component Designator: OldDesignator=R41 NewDesignator=R24
+Change Component Designator: OldDesignator=R42 NewDesignator=R26
+Change Component Designator: OldDesignator=R43 NewDesignator=R27
+Change Component Designator: OldDesignator=R44 NewDesignator=R28
+Change Component Designator: OldDesignator=R45 NewDesignator=R30
+Change Component Designator: OldDesignator=R54 NewDesignator=R41
+Change Component Designator: OldDesignator=R56 NewDesignator=R42
+Change Component Designator: OldDesignator=R57 NewDesignator=R29
+Change Component Designator: OldDesignator=U7 NewDesignator=U1
+Change Component Designator: OldDesignator=U8 NewDesignator=U2
+Change Component Designator: OldDesignator=U9 NewDesignator=U3
+Change Component Designator: OldDesignator=U10 NewDesignator=U8
+Change Component Designator: OldDesignator=U11 NewDesignator=U9
+Change Component Designator: OldDesignator=U12 NewDesignator=U4
+Change Component Designator: OldDesignator=U21 NewDesignator=U10
+Change Component Designator: OldDesignator=VR2 NewDesignator=VR1
+Added Component: Designator=C25(LC-0805_C)
+Added Component: Designator=C28(LC-0805_C)
+Added Component: Designator=C31(LC-CASE-A_3216)
+Added Component: Designator=C32(LC-0805_C)
+Added Component: Designator=P3(HDR1X6)
+Added Component: Designator=P4(HDR1X6)
+Added Component: Designator=R20(LC-0805_R)
+Added Component: Designator=R34(LC-0805_R)
+Added Component: Designator=R35(LC-0805_R)
+Added Component: Designator=R36(LC-0805_R)
+Added Component: Designator=R37(LC-0805_R)
+Added Component: Designator=R38(LC-0805_R)
+Added Component: Designator=R39(LC-0805_R)
+Added Component: Designator=S1(SPST-2)
+Added Component: Designator=S2(SPST-2)
+Added Component: Designator=U7(LC-SOIC-14_150mil)
+Added Pin To Net: NetName=AGND Pin=C25-1
+Added Pin To Net: NetName=AGND Pin=C28-1
+Added Pin To Net: NetName=-12V Pin=C28-2
+Added Pin To Net: NetName=AGND Pin=C31-1
+Added Pin To Net: NetName=-5V Pin=C31-2
+Added Pin To Net: NetName=+12V Pin=C32-1
+Added Pin To Net: NetName=AGND Pin=C32-2
+Added Pin To Net: NetName=VCCO Pin=P3-1
+Added Pin To Net: NetName=AGND Pin=P3-2
+Added Pin To Net: NetName=D1 Pin=P3-3
+Added Pin To Net: NetName=D3 Pin=P3-4
+Added Pin To Net: NetName=D5 Pin=P3-5
+Added Pin To Net: NetName=D7 Pin=P3-6
+Added Pin To Net: NetName=VCCO Pin=P4-1
+Added Pin To Net: NetName=AGND Pin=P4-2
+Added Pin To Net: NetName=D0 Pin=P4-3
+Added Pin To Net: NetName=D2 Pin=P4-4
+Added Pin To Net: NetName=D4 Pin=P4-5
+Added Pin To Net: NetName=D6 Pin=P4-6
+Added Pin To Net: NetName=VCCO Pin=P10-C17
+Added Pin To Net: NetName=AGND Pin=R20-1
+Added Pin To Net: NetName=VCCO Pin=R34-1
+Added Pin To Net: NetName=D8 Pin=R36-2
+Added Pin To Net: NetName=VCCO Pin=R37-2
+Added Pin To Net: NetName=D9 Pin=R39-2
+Added Pin To Net: NetName=AGND Pin=S1-1
+Added Pin To Net: NetName=AGND Pin=S2-1
+Added Pin To Net: NetName=GCLK_P Pin=U7-2
+Added Pin To Net: NetName=GCLK_N Pin=U7-4
+Added Pin To Net: NetName=AGND Pin=U7-7
+Added Pin To Net: NetName=VCCO Pin=U7-14
+Change Net Name : Old Net Name=NetC24_1 New Net Name=NetC1_1
+Change Net Name : Old Net Name=NetC25_1 New Net Name=NetC2_1
+Change Net Name : Old Net Name=NetC26_1 New Net Name=NetC3_1
+Change Net Name : Old Net Name=NetC27_2 New Net Name=NetC4_2
+Change Net Name : Old Net Name=NetC28_2 New Net Name=NetC5_2
+Change Net Name : Old Net Name=NetC32_1 New Net Name=NetC8_1
+Change Net Name : Old Net Name=NetC34_1 New Net Name=NetC10_1
+Change Net Name : Old Net Name=NetC34_2 New Net Name=NetC10_2
+Change Net Name : Old Net Name=NetC35_2 New Net Name=NetC11_2
+Change Net Name : Old Net Name=NetD2_A New Net Name=NetD1_A
+Change Net Name : Old Net Name=NetD2_K New Net Name=NetD1_K
+Change Net Name : Old Net Name=NetD3_A New Net Name=NetD2_A
+Change Net Name : Old Net Name=NetD3_K New Net Name=NetD2_K
+Change Net Name : Old Net Name=NetD4_A New Net Name=NetD3_A
+Change Net Name : Old Net Name=NetD4_K New Net Name=NetD3_K
+Change Net Name : Old Net Name=NetD5_A New Net Name=NetD4_A
+Change Net Name : Old Net Name=NetD5_K New Net Name=NetD4_K
+Change Net Name : Old Net Name=NetD6_A New Net Name=NetD5_A
+Change Net Name : Old Net Name=NetD6_K New Net Name=NetD5_K
+Change Net Name : Old Net Name=NetD7_A New Net Name=NetD6_A
+Change Net Name : Old Net Name=NetD7_K New Net Name=NetD6_K
+Change Net Name : Old Net Name=NetD8_A New Net Name=NetD7_A
+Change Net Name : Old Net Name=NetD8_K New Net Name=NetD7_K
+Change Net Name : Old Net Name=NetD9_A New Net Name=NetD8_A
+Change Net Name : Old Net Name=NetD9_K New Net Name=NetD8_K
+Change Net Name : Old Net Name=NetD10_A New Net Name=NetD9_A
+Change Net Name : Old Net Name=NetD10_K New Net Name=NetD9_K
+Change Net Name : Old Net Name=NetD11_A New Net Name=NetD10_A
+Change Net Name : Old Net Name=NetD11_K New Net Name=NetD10_K
+Change Net Name : Old Net Name=NetR18_1 New Net Name=NetR11_1
+Change Net Name : Old Net Name=NetR21_CCW New Net Name=NetR17_CCW
+Change Net Name : Old Net Name=NetR21_CW New Net Name=NetR17_CW
+Change Net Name : Old Net Name=NetR54_1 New Net Name=NetR41_1
+Change Net Name : Old Net Name=VCCO New Net Name=GCLK_N1
+Added Pin To Net: NetName=GCLK_P1 Pin=P10-C16
+Added Net: Name=GCLK_P1
+Added Pin To Net: NetName=NetC25_2 Pin=C25-2
+Added Pin To Net: NetName=NetC25_2 Pin=R34-2
+Added Pin To Net: NetName=NetC25_2 Pin=R35-2
+Added Pin To Net: NetName=NetC25_2 Pin=U7-5
+Added Net: Name=NetC25_2
+Added Pin To Net: NetName=NetC30_2 Pin=C30-2
+Added Pin To Net: NetName=NetC30_2 Pin=R37-1
+Added Pin To Net: NetName=NetC30_2 Pin=R38-2
+Added Pin To Net: NetName=NetC30_2 Pin=U7-9
+Added Net: Name=NetC30_2
+Added Pin To Net: NetName=NetR20_2 Pin=R20-2
+Added Pin To Net: NetName=NetR20_2 Pin=U2-35
+Added Net: Name=NetR20_2
+Added Pin To Net: NetName=NetR35_1 Pin=R35-1
+Added Pin To Net: NetName=NetR35_1 Pin=S1-2
+Added Net: Name=NetR35_1
+Added Pin To Net: NetName=NetR36_1 Pin=R36-1
+Added Pin To Net: NetName=NetR36_1 Pin=U7-6
+Added Net: Name=NetR36_1
+Added Pin To Net: NetName=NetR38_1 Pin=R38-1
+Added Pin To Net: NetName=NetR38_1 Pin=S2-2
+Added Net: Name=NetR38_1
+Added Pin To Net: NetName=NetR39_1 Pin=R39-1
+Added Pin To Net: NetName=NetR39_1 Pin=U7-8
+Added Net: Name=NetR39_1
+Added Member To Class: ClassName=CVTOP Member=Component C25 470nF (474) 10% 50V
+Added Member To Class: ClassName=CVTOP Member=Component C28 100nF(104) 10% 50V
+Added Member To Class: ClassName=CVTOP Member=Component C31 10uF (106) ㊣10% 16V
+Added Member To Class: ClassName=CVTOP Member=Component C32 100nF(104) 10% 50V
+Added Member To Class: ClassName=CVTOP Member=Component P1 SMB
+Added Member To Class: ClassName=CVTOP Member=Component P3 Header 6
+Added Member To Class: ClassName=CVTOP Member=Component P4 Header 6
+Added Member To Class: ClassName=CVTOP Member=Component R20 2K次 (2001) ㊣1%
+Added Member To Class: ClassName=CVTOP Member=Component R31 1K次 (1001) ㊣1%
+Added Member To Class: ClassName=CVTOP Member=Component R32 0次 (0R0) ㊣1%
+Added Member To Class: ClassName=CVTOP Member=Component R33 3K次 (3001) ㊣1%
+Added Member To Class: ClassName=CVTOP Member=Component R34 10K次 (1002) ㊣1%
+Added Member To Class: ClassName=CVTOP Member=Component R35 330次 (3300) ㊣1%
+Added Member To Class: ClassName=CVTOP Member=Component R36 200次 (2000) ㊣1%
+Added Member To Class: ClassName=CVTOP Member=Component R37 10K次 (1002) ㊣1%
+Added Member To Class: ClassName=CVTOP Member=Component R38 330次 (3300) ㊣1%
+Added Member To Class: ClassName=CVTOP Member=Component R39 200次 (2000) ㊣1%
+Added Member To Class: ClassName=CVTOP Member=Component S1 SW-PB
+Added Member To Class: ClassName=CVTOP Member=Component S2 SW-PB
+Added Member To Class: ClassName=CVTOP Member=Component U7 74HC14D

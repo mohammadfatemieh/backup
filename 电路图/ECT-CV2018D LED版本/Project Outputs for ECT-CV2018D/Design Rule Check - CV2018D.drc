@@ -1,0 +1,23 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\huyafeng\Desktop\µçÂ·Í¼\ECT-CV2018D LED°æ±¾\CV2018D.PcbDoc
+Date     : 2018/8/27
+Time     : 9:51:51
+
+Processing Rule : Width Constraint (Min=10mil) (Max=100mil) (Preferred=15mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=8mil) (All),(All)
+Rule Violations :0
+
+
+Violations Detected : 0
+Time Elapsed        : 00:00:01

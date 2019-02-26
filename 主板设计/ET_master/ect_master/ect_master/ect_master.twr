@@ -1,0 +1,116 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr
+ect_master.pcf -ucf ect_master_0.ucf
+
+Design file:              ect_master.ncd
+Physical constraint file: ect_master.pcf
+Device,package,speed:     xc6slx4,cpg196,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+din<0>      |    0.778(R)|      SLOW  |    0.579(R)|      SLOW  |ADCLK_OBUF_BUFG   |   0.000|
+din<1>      |    2.518(R)|      SLOW  |   -0.756(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+din<2>      |    2.007(R)|      SLOW  |   -0.409(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+din<3>      |    2.700(R)|      SLOW  |   -0.847(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+din<4>      |    1.635(R)|      SLOW  |   -0.214(R)|      SLOW  |ADCLK_OBUF_BUFG   |   0.000|
+din<5>      |    2.096(R)|      SLOW  |   -0.546(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+din<6>      |    1.867(R)|      SLOW  |   -0.373(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+din<7>      |    2.063(R)|      SLOW  |   -0.471(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+din<8>      |    1.689(R)|      SLOW  |   -0.291(R)|      SLOW  |ADCLK_OBUF_BUFG   |   0.000|
+din<9>      |    1.839(R)|      SLOW  |   -0.422(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+din<10>     |    2.026(R)|      SLOW  |   -0.466(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+din<11>     |    2.413(R)|      SLOW  |   -0.665(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+din<12>     |    1.869(R)|      SLOW  |   -0.362(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+din<13>     |    2.458(R)|      SLOW  |   -0.771(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+astb        |        10.841(R)|      SLOW  |         5.079(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+dstb        |        10.902(R)|      SLOW  |         5.120(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+gpo_dout<0> |        12.019(R)|      SLOW  |         5.544(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+gpo_dout<1> |        12.009(R)|      SLOW  |         4.940(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+gpo_dout<2> |        12.005(R)|      SLOW  |         5.143(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+gpo_dout<3> |        11.979(R)|      SLOW  |         4.975(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+gpo_dout<4> |        11.401(R)|      SLOW  |         5.177(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+gpo_dout<5> |        11.903(R)|      SLOW  |         4.980(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+gpo_dout<6> |        11.557(R)|      SLOW  |         5.056(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+gpo_dout<7> |        12.127(R)|      SLOW  |         5.244(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pdb<0>      |        13.565(R)|      SLOW  |         5.145(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pdb<1>      |        13.565(R)|      SLOW  |         5.042(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pdb<2>      |        14.158(R)|      SLOW  |         5.433(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pdb<3>      |        14.158(R)|      SLOW  |         5.432(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pdb<4>      |        14.497(R)|      SLOW  |         5.451(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pdb<5>      |        14.497(R)|      SLOW  |         5.354(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pdb<6>      |        14.179(R)|      SLOW  |         5.414(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pdb<7>      |        14.179(R)|      SLOW  |         5.372(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pdb<8>      |        14.381(R)|      SLOW  |         5.369(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pdb<9>      |        14.381(R)|      SLOW  |         5.289(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pdb<10>     |        14.232(R)|      SLOW  |         5.257(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pdb<11>     |        14.713(R)|      SLOW  |         5.342(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pdb<12>     |        14.431(R)|      SLOW  |         5.265(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pdb<13>     |        14.431(R)|      SLOW  |         5.265(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pdb<14>     |        14.770(R)|      SLOW  |         5.410(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pdb<15>     |        14.770(R)|      SLOW  |         5.410(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+pwr         |        10.973(R)|      SLOW  |         5.298(R)|      FAST  |ADCLK_OBUF_BUFG   |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    9.517|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clk            |ADCLK          |   13.262|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Sep 14 15:31:40 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 244 MB
+
+
+

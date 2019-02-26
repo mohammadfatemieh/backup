@@ -1,0 +1,673 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Reading design: ect_master.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ect_master.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ect_master"
+Output Format                      : NGC
+Target Device                      : xc6slx4-2-cpg196
+
+---- Source Options
+Top Module Name                    : ect_master
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\HU\DA_test\origin_2\ect_master\ipcore_dir\microblaze_mcs.vhd" into library work
+Parsing VHDL file "D:\HU\DA_test\origin_2\ect_master\ipcore_dir\dcm.vhd" into library work
+Parsing entity <dcm>.
+Parsing architecture <xilinx> of entity <dcm>.
+Parsing VHDL file "D:\HU\DA_test\origin_2\ect_master\ipcore_dir\dds.vhd" into library work
+Parsing entity <dds>.
+Parsing architecture <dds_a> of entity <dds>.
+Parsing VHDL file "D:\HU\DA_test\origin_2\ect_master\ipcore_dir\Macc.vhd" into library work
+Parsing entity <Macc>.
+Parsing architecture <Macc_a> of entity <macc>.
+Parsing VHDL file "D:\HU\DA_test\origin_2\ect_master\AD9240.vhd" into library work
+Parsing entity <ad9240>.
+Parsing architecture <Behavioral> of entity <ad9240>.
+Parsing VHDL file "D:\HU\DA_test\origin_2\ect_master\jietiao.vhd" into library work
+Parsing entity <jietiao>.
+Parsing architecture <Behavioral> of entity <jietiao>.
+Parsing VHDL file "D:\HU\DA_test\origin_2\ect_master\ect_master.vhd" into library work
+Parsing entity <ect_master>.
+Parsing architecture <Behavioral> of entity <ect_master>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <ect_master> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "D:\HU\DA_test\origin_2\ect_master\ect_master.vhd" Line 193: Using initial value "0000001100110011001100110" for dds_data since it is never assigned
+WARNING:HDLCompiler:89 - "D:\HU\DA_test\origin_2\ect_master\ect_master.vhd" Line 64: <microblaze_mcs> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:1127 - "D:\HU\DA_test\origin_2\ect_master\ect_master.vhd" Line 241: Assignment to clkjietiao ignored, since the identifier is never used
+
+Elaborating entity <dcm> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <dds> (architecture <dds_a>) from library <work>.
+
+Elaborating entity <jietiao> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ad9240> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Macc> (architecture <Macc_a>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\HU\DA_test\origin_2\ect_master\jietiao.vhd" Line 176: jietiao should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\HU\DA_test\origin_2\ect_master\ect_master.vhd" Line 403: xled should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "D:\HU\DA_test\origin_2\ect_master\ect_master.vhd" Line 393: Assignment to flaguart ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "D:\HU\DA_test\origin_2\ect_master\ect_master.vhd" Line 180: Net <dcmreset> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ect_master>.
+    Related source file is "D:\HU\DA_test\origin_2\ect_master\ect_master.vhd".
+WARNING:Xst:647 - Input <pwait> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <RTS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\HU\DA_test\origin_2\ect_master\ect_master.vhd" line 215: Output port <IO_Byte_Enable> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\HU\DA_test\origin_2\ect_master\ect_master.vhd" line 215: Output port <IO_Write_Data> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\HU\DA_test\origin_2\ect_master\ect_master.vhd" line 215: Output port <UART_Interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\HU\DA_test\origin_2\ect_master\ect_master.vhd" line 215: Output port <INTC_IRQ> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\HU\DA_test\origin_2\ect_master\ect_master.vhd" line 351: Output port <CLK_OUT2> of the instance <Inst_clk> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\HU\DA_test\origin_2\ect_master\ect_master.vhd" line 351: Output port <clocklocked> of the instance <Inst_clk> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\HU\DA_test\origin_2\ect_master\ect_master.vhd" line 371: Output port <j> of the instance <Inst_jietiao> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <dcmreset> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <IO_Ready>.
+    Found 1-bit register for signal <astb>.
+    Found 1-bit register for signal <dstb>.
+    Found 2-bit register for signal <curstate_meas>.
+    Found 32-bit register for signal <IO_Read_Data>.
+    Found 1-bit register for signal <pwr>.
+    Found finite state machine <FSM_0> for signal <curstate_meas>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clkmain (rising_edge)                          |
+    | Power Up State     | waitad                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 1-bit latch for signal <adce>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  36 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred   1 Finite State Machine(s).
+Unit <ect_master> synthesized.
+
+Synthesizing Unit <dcm>.
+    Related source file is "D:\HU\DA_test\origin_2\ect_master\ipcore_dir\dcm.vhd".
+    Summary:
+	no macro.
+Unit <dcm> synthesized.
+
+Synthesizing Unit <jietiao>.
+    Related source file is "D:\HU\DA_test\origin_2\ect_master\jietiao.vhd".
+    Found 1-bit register for signal <adrdy>.
+    Found 1-bit register for signal <flag>.
+    Found 1-bit register for signal <sclr1>.
+    Found 1-bit register for signal <count1<31>>.
+    Found 1-bit register for signal <count1<30>>.
+    Found 1-bit register for signal <count1<29>>.
+    Found 1-bit register for signal <count1<28>>.
+    Found 1-bit register for signal <count1<27>>.
+    Found 1-bit register for signal <count1<26>>.
+    Found 1-bit register for signal <count1<25>>.
+    Found 1-bit register for signal <count1<24>>.
+    Found 1-bit register for signal <count1<23>>.
+    Found 1-bit register for signal <count1<22>>.
+    Found 1-bit register for signal <count1<21>>.
+    Found 1-bit register for signal <count1<20>>.
+    Found 1-bit register for signal <count1<19>>.
+    Found 1-bit register for signal <count1<18>>.
+    Found 1-bit register for signal <count1<17>>.
+    Found 1-bit register for signal <count1<16>>.
+    Found 1-bit register for signal <count1<15>>.
+    Found 1-bit register for signal <count1<14>>.
+    Found 1-bit register for signal <count1<13>>.
+    Found 1-bit register for signal <count1<12>>.
+    Found 1-bit register for signal <count1<11>>.
+    Found 1-bit register for signal <count1<10>>.
+    Found 1-bit register for signal <count1<9>>.
+    Found 1-bit register for signal <count1<8>>.
+    Found 1-bit register for signal <count1<7>>.
+    Found 1-bit register for signal <count1<6>>.
+    Found 1-bit register for signal <count1<5>>.
+    Found 1-bit register for signal <count1<4>>.
+    Found 1-bit register for signal <count1<3>>.
+    Found 1-bit register for signal <count1<2>>.
+    Found 1-bit register for signal <count1<1>>.
+    Found 1-bit register for signal <count1<0>>.
+    Found 32-bit adder for signal <count1[31]_GND_30_o_add_22_OUT> created at line 160.
+    Found 32-bit comparator greater for signal <n0002> created at line 144
+    Found 17-bit comparator greater for signal <n0005> created at line 147
+    Found 17-bit comparator greater for signal <n0010> created at line 150
+    Found 17-bit comparator greater for signal <n0015> created at line 153
+    Found 17-bit comparator lessequal for signal <n0020> created at line 157
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred   9 Multiplexer(s).
+Unit <jietiao> synthesized.
+
+Synthesizing Unit <ad9240>.
+    Related source file is "D:\HU\DA_test\origin_2\ect_master\AD9240.vhd".
+WARNING:Xst:647 - Input <otr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 14-bit register for signal <adout>.
+    Summary:
+	inferred  14 D-type flip-flop(s).
+Unit <ad9240> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 41
+ 1-bit register                                        : 39
+ 14-bit register                                       : 1
+ 32-bit register                                       : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 5
+ 17-bit comparator greater                             : 3
+ 17-bit comparator lessequal                           : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 6
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 14-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/microblaze_mcs.ngc>.
+Reading core <ipcore_dir/dds.ngc>.
+Reading core <ipcore_dir/Macc.ngc>.
+Reading Secure Unit <blk00000001>.
+Loading core <microblaze_mcs> for timing and area information for instance <mcs_0>.
+Loading core <dds> for timing and area information for instance <Inst_dds>.
+Loading core <Macc> for timing and area information for instance <Inst_Macc>.
+Loading core <Macc> for timing and area information for instance <Inst_Macc1>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 85
+ Flip-Flops                                            : 85
+# Comparators                                          : 5
+ 17-bit comparator greater                             : 3
+ 17-bit comparator lessequal                           : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 6
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 14-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <curstate_meas[1:2]> with sequential encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ uart      | 01
+ waitad    | 00
+ adok      | 10
+ jietiaook | 11
+-----------------------
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    count1_31 in unit <jietiao>
+    flag in unit <jietiao>
+    sclr1 in unit <jietiao>
+    count1_0 in unit <jietiao>
+    count1_1 in unit <jietiao>
+    count1_3 in unit <jietiao>
+    count1_4 in unit <jietiao>
+    count1_2 in unit <jietiao>
+    count1_5 in unit <jietiao>
+    count1_6 in unit <jietiao>
+    count1_7 in unit <jietiao>
+    count1_8 in unit <jietiao>
+    count1_10 in unit <jietiao>
+    count1_11 in unit <jietiao>
+    count1_9 in unit <jietiao>
+    count1_13 in unit <jietiao>
+    count1_14 in unit <jietiao>
+    count1_12 in unit <jietiao>
+    count1_16 in unit <jietiao>
+    count1_17 in unit <jietiao>
+    count1_15 in unit <jietiao>
+    count1_18 in unit <jietiao>
+    count1_19 in unit <jietiao>
+    count1_20 in unit <jietiao>
+    count1_21 in unit <jietiao>
+    count1_23 in unit <jietiao>
+    count1_24 in unit <jietiao>
+    count1_22 in unit <jietiao>
+    count1_25 in unit <jietiao>
+    count1_26 in unit <jietiao>
+    count1_27 in unit <jietiao>
+    count1_28 in unit <jietiao>
+    count1_30 in unit <jietiao>
+    count1_29 in unit <jietiao>
+
+
+Optimizing unit <ad9240> ...
+
+Optimizing unit <ect_master> ...
+
+Optimizing unit <jietiao> ...
+INFO:Xst:2261 - The FF/Latch <Inst_jietiao/count1_31> in Unit <ect_master> is equivalent to the following 24 FFs/Latches, which will be removed : <Inst_jietiao/count1_7> <Inst_jietiao/count1_8> <Inst_jietiao/count1_10> <Inst_jietiao/count1_11> <Inst_jietiao/count1_9> <Inst_jietiao/count1_13> <Inst_jietiao/count1_14> <Inst_jietiao/count1_12> <Inst_jietiao/count1_16> <Inst_jietiao/count1_17> <Inst_jietiao/count1_15> <Inst_jietiao/count1_18> <Inst_jietiao/count1_19> <Inst_jietiao/count1_20> <Inst_jietiao/count1_21> <Inst_jietiao/count1_23> <Inst_jietiao/count1_24> <Inst_jietiao/count1_22> <Inst_jietiao/count1_25> <Inst_jietiao/count1_26> <Inst_jietiao/count1_27> <Inst_jietiao/count1_28> <Inst_jietiao/count1_30> <Inst_jietiao/count1_29> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ect_master, actual ratio is 34.
+INFO:Xst:2260 - The FF/Latch <U0/ilmb/POR_FF_I> in Unit <mcs_0> is equivalent to the following FF/Latch : <U0/dlmb/POR_FF_I> 
+INFO:Xst:2260 - The FF/Latch <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[31].fdr_i> in Unit <mcs_0> is equivalent to the following 29 FFs/Latches : <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[30].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[29].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[28].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[27].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[26].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[25].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[24].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[23].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[22].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[21].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[20].fdr_i>
+   <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[19].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[18].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[17].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[16].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[15].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[14].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[13].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[12].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[11].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[10].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[9].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[8].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[7].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[6].fdr_i>
+   <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[5].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[4].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[3].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[0].fdr_i> 
+INFO:Xst:2260 - The FF/Latch <blk00000160> in Unit <Inst_dds> is equivalent to the following FF/Latch : <blk000001cf> 
+INFO:Xst:2260 - The FF/Latch <U0/ilmb/POR_FF_I> in Unit <mcs_0> is equivalent to the following FF/Latch : <U0/dlmb/POR_FF_I> 
+INFO:Xst:2260 - The FF/Latch <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[31].fdr_i> in Unit <mcs_0> is equivalent to the following 29 FFs/Latches : <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[30].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[29].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[28].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[27].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[26].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[25].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[24].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[23].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[22].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[21].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[20].fdr_i>
+   <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[19].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[18].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[17].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[16].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[15].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[14].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[13].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[12].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[11].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[10].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[9].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[8].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[7].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[6].fdr_i>
+   <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[5].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[4].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[3].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[0].fdr_i> 
+INFO:Xst:2260 - The FF/Latch <blk00000160> in Unit <Inst_dds> is equivalent to the following FF/Latch : <blk000001cf> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 63
+ Flip-Flops                                            : 63
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ect_master.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1210
+#      GND                         : 5
+#      INV                         : 21
+#      LUT1                        : 35
+#      LUT2                        : 148
+#      LUT3                        : 109
+#      LUT4                        : 203
+#      LUT5                        : 44
+#      LUT6                        : 169
+#      LUT6_2                      : 90
+#      MULT_AND                    : 3
+#      MUXCY                       : 103
+#      MUXCY_L                     : 74
+#      MUXF5                       : 66
+#      MUXF6                       : 1
+#      MUXF7                       : 12
+#      VCC                         : 5
+#      XORCY                       : 122
+# FlipFlops/Latches                : 854
+#      FD                          : 324
+#      FDC                         : 11
+#      FDE                         : 188
+#      FDR                         : 111
+#      FDRE                        : 194
+#      FDS                         : 9
+#      FDSE                        : 16
+#      LD                          : 1
+# RAMS                             : 73
+#      RAM32X1D                    : 64
+#      RAMB16BWER                  : 9
+# Shift Registers                  : 61
+#      SRL16E                      : 58
+#      SRLC16E                     : 3
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 41
+#      IBUF                        : 16
+#      IBUFG                       : 1
+#      OBUF                        : 24
+# DCMs                             : 1
+#      DCM_SP                      : 1
+# DSPs                             : 2
+#      DSP48A1                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4cpg196-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             854  out of   4800    17%  
+ Number of Slice LUTs:                 1008  out of   2400    42%  
+    Number used as Logic:               819  out of   2400    34%  
+    Number used as Memory:              189  out of   1200    15%  
+       Number used as RAM:              128
+       Number used as SRL:               61
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1525
+   Number with an unused Flip Flop:     671  out of   1525    44%  
+   Number with an unused LUT:           517  out of   1525    33%  
+   Number of fully used LUT-FF pairs:   337  out of   1525    22%  
+   Number of unique control sets:        54
+
+IO Utilization: 
+ Number of IOs:                          52
+ Number of bonded IOBs:                  41  out of    106    38%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                9  out of     12    75%  
+    Number using Block RAM only:          9
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+ Number of DSP48A1s:                      2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------+-------------------------+-------+
+Clock Signal                                                  | Clock buffer(FF name)   | Load  |
+--------------------------------------------------------------+-------------------------+-------+
+clk                                                           | DCM_SP:CLKFX            | 754   |
+curstate_meas[1]_PWR_25_o_Mux_21_o(curstate_meas__n0064<1>1:O)| NONE(*)(adce)           | 1     |
+adce                                                          | NONE(Inst_jietiao/adrdy)| 1     |
+clk                                                           | DCM_SP:CLK0             | 234   |
+--------------------------------------------------------------+-------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 86.193ns (Maximum Frequency: 11.602MHz)
+   Minimum input arrival time before clock: 2.547ns
+   Maximum output required time after clock: 5.248ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 86.193ns (frequency: 11.602MHz)
+  Total number of paths / destination ports: 139238 / 2845
+-------------------------------------------------------------------------
+Delay:               8.619ns (Levels of Logic = 5)
+  Source:            mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.Buffer_DFFs[1].FDS_I (FF)
+  Destination:       mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Op2_DFF (FF)
+  Source Clock:      clk rising 10.0X
+  Destination Clock: clk rising 10.0X
+
+  Data Path: mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.Buffer_DFFs[1].FDS_I to mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Op2_DFF
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             47   0.525   1.770  U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.Buffer_DFFs[1].FDS_I (U0/microblaze_I/MicroBlaze_Core_I/Area.buffer_Addr<1>)
+     SRL16E:A2->Q         51   0.254   2.105  U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[16].SRL16E_I/Use_unisim.MB_SRL16E_I1 (U0/microblaze_I/MicroBlaze_Core_I/Area.imm_Value<0>)
+     LUT4:I0->O            1   0.254   0.958  U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.Res_Forward2_LUT1 (U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.res_forward2_1)
+     LUT4:I0->O           44   0.254   1.997  U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.Res_Forward2_LUT4 (U0/microblaze_I/MicroBlaze_Core_I/Area.res_Forward2)
+     LUT6:I2->O            1   0.254   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Mmux_op2_I12_G (N117)
+     MUXF7:I1->O           1   0.175   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Mmux_op2_I12 (U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/op2_I)
+     FDE:D                     0.074          U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[23].Operand_Select_Bit_I/Op2_DFF
+    ----------------------------------------
+    Total                      8.619ns (1.790ns logic, 6.829ns route)
+                                       (20.8% logic, 79.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              2.547ns (Levels of Logic = 2)
+  Source:            BTN (PAD)
+  Destination:       curstate_meas_FSM_FFd2 (FF)
+  Destination Clock: clk rising 10.0X
+
+  Data Path: BTN to curstate_meas_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.910  BTN_IBUF (BTN_IBUF)
+     LUT3:I0->O            1   0.235   0.000  curstate_meas_FSM_FFd2-In1 (curstate_meas_FSM_FFd2-In)
+     FD:D                      0.074          curstate_meas_FSM_FFd2
+    ----------------------------------------
+    Total                      2.547ns (1.637ns logic, 0.910ns route)
+                                       (64.3% logic, 35.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Offset:              5.248ns (Levels of Logic = 3)
+  Source:            Inst_dds/blk00000136 (FF)
+  Destination:       DO<13> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Inst_dds/blk00000136 to DO<13>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.525   0.875  blk00000136 (U0/i_synth/I_SINCOS.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/opt_has_pipe.first_q<6>)
+     end scope: 'Inst_dds:sine<13>'
+     INV:I->O              1   0.255   0.681  Mxor_DO_13_xo<0>1_INV_0 (DO_13_OBUF)
+     OBUF:I->O                 2.912          DO_13_OBUF (DO<13>)
+    ----------------------------------------
+    Total                      5.248ns (3.692ns logic, 1.556ns route)
+                                       (70.4% logic, 29.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock adce
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.211|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adce           |    2.971|         |         |         |
+clk            |    8.619|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock curstate_meas[1]_PWR_25_o_Mux_21_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.723|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 17.24 secs
+ 
+--> 
+
+Total memory usage is 313852 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   13 (   0 filtered)
+Number of infos    :   15 (   0 filtered)
+

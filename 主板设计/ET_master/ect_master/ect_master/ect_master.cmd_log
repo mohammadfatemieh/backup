@@ -1,0 +1,342 @@
+xst -intstyle ise -ifn "D:/git/ect_master/ect_master/ect_master.xst" -ofn "D:/git/ect_master/ect_master/ect_master.syr" 
+xst -intstyle ise -ifn "D:/git/ect_master/ect_master/ect_master.xst" -ofn "D:/git/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd  
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/mcs_0.bmm" 
+xst -intstyle ise -ifn "D:/git/ect_master/ect_master/ect_master.xst" -ofn "D:/git/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/mcs_0.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/git/ect_master/ect_master/ect_master.xst" -ofn "D:/git/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/git/ect_master/ect_master/ect_master.xst" -ofn "D:/git/ect_master/ect_master/ect_master.syr" 
+xst -intstyle ise -ifn "D:/git/ect_master/ect_master/ect_master.xst" -ofn "D:/git/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+xst -intstyle ise -ifn "D:/git/ect_master/ect_master/ect_master.xst" -ofn "D:/git/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master.ucf -p xc6slx16-csg324-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master.ucf -p xc6slx16-csg324-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/git/ect_master/ect_master/ect_master.xst" -ofn "D:/git/ect_master/ect_master/ect_master.syr" 
+xst -intstyle ise -ifn "D:/git/ect_master/ect_master/ect_master.xst" -ofn "D:/git/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+xst -intstyle ise -ifn "D:/HU/ect_master/ect_master/ect_master.xst" -ofn "D:/HU/ect_master/ect_master/ect_master.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ect_master_0.ucf -p xc6slx4-cpg196-2 ect_master.ngc ect_master.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc6slx4-cpg196-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ect_master_map.ncd ect_master.ngd ect_master.pcf 
+par -w -intstyle ise -ol high -mt off ect_master_map.ncd ect_master.ncd ect_master.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr ect_master.pcf -ucf ect_master_0.ucf 
+bitgen -intstyle ise -f ect_master.ut ect_master.ncd 

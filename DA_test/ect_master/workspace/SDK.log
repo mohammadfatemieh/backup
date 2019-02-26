@@ -1,0 +1,88 @@
+09:59:43.945 INFO  - Project 'hw_platform_0' created. You can now create BSPs and application projects targeting this hardware platform. 
+15:13:32.721 INFO  - Project hw_platform_0's source hardware specification located at D:\HU\ect_master\ect_master\ipcore_dir\microblaze_mcs_sdk.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+15:18:30.725 INFO  - Copied contents of D:\HU\ect_master\ect_master\ipcore_dir\microblaze_mcs_sdk.xml into \hw_platform_0\system.xml. 
+15:18:30.734 INFO  - Copied contents of D:\HU\ect_master\ect_master\ipcore_dir\mcs_0.bmm into \hw_platform_0\system_bd.bmm. 
+15:18:31.264 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+15:18:46.463 INFO  - Updating hardware inferred compiler options for hello_world. 
+15:18:46.502 INFO  - Clearing existing target manager status. 
+15:18:48.745 INFO  - Closing and re-opening the MSS file of ther project standalone_bsp_0 
+15:18:49.119 INFO  - Closing and re-opening the MSS file of ther project hello_world_bsp 
+15:18:49.392 INFO  - Closing and re-opening the MSS file of ther project hello_world_bsp 
+15:18:50.663 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+15:34:18.298 INFO  - Project hw_platform_0's source hardware specification located at D:\HU\ect_master\ect_master\ipcore_dir\microblaze_mcs_sdk.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+16:15:52.125 INFO  - Copied contents of D:\HU\ect_master\ect_master\ipcore_dir\microblaze_mcs_sdk.xml into \hw_platform_0\system.xml. 
+16:15:52.127 INFO  - Copied contents of D:\HU\ect_master\ect_master\ipcore_dir\mcs_0.bmm into \hw_platform_0\system_bd.bmm. 
+16:15:52.278 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:16:07.689 INFO  - Updating hardware inferred compiler options for hello_world. 
+16:16:07.721 INFO  - Clearing existing target manager status. 
+16:16:07.722 INFO  - Closing and re-opening the MSS file of ther project standalone_bsp_0 
+16:16:08.005 INFO  - Closing and re-opening the MSS file of ther project hello_world_bsp 
+16:16:09.278 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+16:17:31.026 INFO  - Project hw_platform_0's source hardware specification located at D:\HU\ect_master\ect_master\ipcore_dir\microblaze_mcs_sdk.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+16:17:31.193 INFO  - Copied contents of D:\HU\ect_master\ect_master\ipcore_dir\microblaze_mcs_sdk.xml into \hw_platform_0\system.xml. 
+16:17:31.195 INFO  - Copied contents of D:\HU\ect_master\ect_master\ipcore_dir\mcs_0.bmm into \hw_platform_0\system_bd.bmm. 
+16:17:31.328 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:17:46.217 INFO  - Updating hardware inferred compiler options for hello_world. 
+16:17:46.253 INFO  - Clearing existing target manager status. 
+16:17:47.255 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+16:26:46.228 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:11:32.133 INFO  - Project hw_platform_0's source hardware specification located at D:\HU\ect_master\ect_master\ipcore_dir\microblaze_mcs_sdk.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+10:11:32.884 INFO  - Copied contents of D:\HU\ect_master\ect_master\ipcore_dir\microblaze_mcs_sdk.xml into \hw_platform_0\system.xml. 
+10:11:32.893 INFO  - Copied contents of D:\HU\ect_master\ect_master\ipcore_dir\mcs_0.bmm into \hw_platform_0\system_bd.bmm. 
+10:11:33.417 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:11:48.706 INFO  - Updating hardware inferred compiler options for hello_world. 
+10:11:48.719 INFO  - Clearing existing target manager status. 
+15:58:12.868 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:42:14.722 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+21:42:49.675 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+21:45:45.521 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Unknown Error
+ 
+21:46:21.762 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Unknown Error
+ 
+21:46:49.261 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+21:48:30.239 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Unknown Error
+ 
+21:50:32.315 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Unknown Error
+ 
+21:51:53.102 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Unknown Error
+ 
+21:56:05.481 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

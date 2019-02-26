@@ -1,0 +1,110 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml ect_master.twx ect_master.ncd -o ect_master.twr
+ect_master.pcf -ucf ect_master_0.ucf
+
+Design file:              ect_master.ncd
+Physical constraint file: ect_master.pcf
+Device,package,speed:     xc6slx4,cpg196,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+RXD         |    4.606(R)|      SLOW  |   -1.845(R)|      FAST  |clkmain           |   0.000|
+din<0>      |    7.669(R)|      SLOW  |   -3.605(R)|      FAST  |DACLK_OBUF        |   0.000|
+din<1>      |    7.399(R)|      SLOW  |   -3.543(R)|      FAST  |DACLK_OBUF        |   0.000|
+din<2>      |    7.241(R)|      SLOW  |   -3.376(R)|      FAST  |DACLK_OBUF        |   0.000|
+din<3>      |    7.384(R)|      SLOW  |   -3.568(R)|      FAST  |DACLK_OBUF        |   0.000|
+din<4>      |    6.078(R)|      SLOW  |   -2.737(R)|      FAST  |DACLK_OBUF        |   0.000|
+din<5>      |    6.153(R)|      SLOW  |   -2.864(R)|      FAST  |DACLK_OBUF        |   0.000|
+din<6>      |    6.478(R)|      SLOW  |   -2.990(R)|      FAST  |DACLK_OBUF        |   0.000|
+din<7>      |    6.360(R)|      SLOW  |   -3.025(R)|      FAST  |DACLK_OBUF        |   0.000|
+din<8>      |    6.197(R)|      SLOW  |   -2.834(R)|      FAST  |DACLK_OBUF        |   0.000|
+din<9>      |    6.138(R)|      SLOW  |   -2.846(R)|      FAST  |DACLK_OBUF        |   0.000|
+din<10>     |    5.941(R)|      SLOW  |   -2.659(R)|      FAST  |DACLK_OBUF        |   0.000|
+din<11>     |    5.564(R)|      SLOW  |   -2.514(R)|      FAST  |DACLK_OBUF        |   0.000|
+din<12>     |    6.086(R)|      SLOW  |   -2.711(R)|      FAST  |DACLK_OBUF        |   0.000|
+din<13>     |    6.129(R)|      SLOW  |   -2.847(R)|      FAST  |DACLK_OBUF        |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+DO<0>       |         6.431(R)|      SLOW  |         2.767(R)|      FAST  |DACLK_OBUF        |   0.000|
+DO<1>       |         6.821(R)|      SLOW  |         2.985(R)|      FAST  |DACLK_OBUF        |   0.000|
+DO<2>       |         6.893(R)|      SLOW  |         3.052(R)|      FAST  |DACLK_OBUF        |   0.000|
+DO<3>       |         6.764(R)|      SLOW  |         2.969(R)|      FAST  |DACLK_OBUF        |   0.000|
+DO<4>       |         7.037(R)|      SLOW  |         3.059(R)|      FAST  |DACLK_OBUF        |   0.000|
+DO<5>       |         6.792(R)|      SLOW  |         2.964(R)|      FAST  |DACLK_OBUF        |   0.000|
+DO<6>       |         6.610(R)|      SLOW  |         2.845(R)|      FAST  |DACLK_OBUF        |   0.000|
+DO<7>       |         6.452(R)|      SLOW  |         2.781(R)|      FAST  |DACLK_OBUF        |   0.000|
+DO<8>       |         7.781(R)|      SLOW  |         3.676(R)|      FAST  |DACLK_OBUF        |   0.000|
+DO<9>       |         5.739(R)|      SLOW  |         2.372(R)|      FAST  |DACLK_OBUF        |   0.000|
+DO<10>      |         8.047(R)|      SLOW  |         3.766(R)|      FAST  |DACLK_OBUF        |   0.000|
+DO<11>      |         5.894(R)|      SLOW  |         2.473(R)|      FAST  |DACLK_OBUF        |   0.000|
+DO<12>      |         7.449(R)|      SLOW  |         3.387(R)|      FAST  |DACLK_OBUF        |   0.000|
+DO<13>      |         7.057(R)|      SLOW  |         3.047(R)|      FAST  |DACLK_OBUF        |   0.000|
+TXD         |         7.078(R)|      SLOW  |         3.137(R)|      FAST  |clkmain           |   0.000|
+astb        |         5.572(R)|      SLOW  |         2.296(R)|      FAST  |clkmain           |   0.000|
+dstb        |         5.662(R)|      SLOW  |         2.355(R)|      FAST  |clkmain           |   0.000|
+led<3>      |         6.415(R)|      SLOW  |         2.911(R)|      FAST  |clkmain           |   0.000|
+pwr         |         5.681(R)|      SLOW  |         2.469(R)|      FAST  |clkmain           |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   10.359|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clk            |ADCLK          |    5.041|
+clk            |DACLK          |    5.303|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Dec 15 15:17:46 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 262 MB
+
+
+

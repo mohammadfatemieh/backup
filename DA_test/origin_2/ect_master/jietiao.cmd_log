@@ -1,0 +1,2 @@
+vhdtdtfi -prj ect_master -o D:/HU/DA_test/origin_2/ect_master/jietiao.vhi -module jietiao -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ipcore_dir/Macc.vhd -lib work ipcore_dir/Macc1.vhd -lib work AD9240.vhd -lib work jietiao.vhd 
+vhdtdtfi -prj ect_master -o D:/HU/DA_test/origin_2/ect_master/jietiao.vhi -module jietiao -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ipcore_dir/Macc.vhd -lib work ipcore_dir/Macc1.vhd -lib work AD9240.vhd -lib work jietiao.vhd 

@@ -1,0 +1,28 @@
+Command line:
+   ect_master_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59787
+
+Fri Sep 21 14:02:12 2018
+
+
+ Elaboration Time: 0.34375 sec
+
+ Current Memory Usage: 897.143 Meg
+
+ Total Signals          : 10622
+ Total Nets             : 14122
+ Total Signal Drivers   : 2535
+ Total Blocks           : 1404
+ Total Primitive Blocks : 1402
+ Total Processes        : 2290
+ Total Traceable Variables  : 2905
+ Total Scalar Nets and Variables : 214355
+
+ Total Simulation Time: 9.78125 sec
+
+ Current Memory Usage: 425.284 Meg
+
+Fri Sep 21 14:35:26 2018
+

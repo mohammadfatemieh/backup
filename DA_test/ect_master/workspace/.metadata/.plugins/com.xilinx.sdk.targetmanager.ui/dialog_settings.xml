@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="D:\HU\DA_test\ect_master\ipcore_dir\microblaze_mcs_bd.bmm" key="hw_platform_0-bmmFile"/>
+	<item value="D:\HU\DA_test\ect_master\ect_master.bit" key="hw_platform_0-bitFile"/>
+	<item value="D:\HU\DA_test\ect_master\workspace\hello_world\Debug\hello_world.elf" key="hw_platform_0-microblaze_mcs-initElf"/>
+</section>

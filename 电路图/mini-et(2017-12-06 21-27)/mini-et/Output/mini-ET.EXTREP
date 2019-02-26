@@ -1,0 +1,23 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: mini-ET.GBR   2017/12/5  20:46:01
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.GTL                TopLayer                                
+.GP1                Gnd                                     
+.GP2                Power                                   
+.GBL                BottomLayer                             
+.GPB                Bottom Pad Master                       
+.GPT                Top Pad Master                          
+.GTO                TopOverlay                              
+.GTP                TopPaste                                
+.GTS                TopSolder                               
+.GBS                BottomSolder                            
+.GM1                Mechanical1                             
+.GM13               Mechanical13                            
+.GM15               Mechanical15                            
+.GD1                Drill Drawing                           
+------------------------------------------------------------------------------------------

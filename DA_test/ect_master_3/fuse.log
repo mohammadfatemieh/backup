@@ -1,0 +1,49 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/HU/DA_test/ect_master_3/psd_isim_beh.exe -prj D:/HU/DA_test/ect_master_3/psd_beh.prj work.psd 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/HU/DA_test/ect_master_3/ipcore_dir/Macc.vhd" into library work
+Parsing VHDL file "D:/HU/DA_test/ect_master_3/ipcore_dir/cnt.vhd" into library work
+Parsing VHDL file "D:/HU/DA_test/ect_master_3/AD9240.vhd" into library work
+Parsing VHDL file "D:/HU/DA_test/ect_master_3/psd.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity ad9240 [ad9240_default]
+Compiling package textio
+Compiling package bip_utils_pkg_v2_0
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package xbip_counter_v2_0_pkg
+Compiling package c_counter_binary_v11_0_pkg
+Compiling package xbip_counter_v2_0_xst_comp
+Compiling package numeric_std
+Compiling package bip_usecase_utils_pkg_v2_0
+Compiling package c_addsub_pkg_v11_0
+Compiling package c_compare_v11_0_comp
+Compiling package c_mux_bus_v11_0_comp
+Compiling package c_reg_fd_v11_0_comp
+Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(16,"0","0",1,0,1...]
+Compiling architecture behavioral of entity c_addsub_v11_0_legacy [\c_addsub_v11_0_legacy(16,16,16,...]
+Compiling architecture behavioral of entity c_mux_bus_v11_0 [\c_mux_bus_v11_0("virtex6","virt...]
+Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(1,"0","0",1,0,1,...]
+Compiling architecture behavioral of entity c_compare_v11_0 [\c_compare_v11_0(16,"0",1,1,"1",...]
+Compiling architecture behavioral of entity c_counter_binary_v11_0_legacy [\c_counter_binary_v11_0_legacy("...]
+Compiling architecture behavioral of entity c_counter_binary_v11_0 [\c_counter_binary_v11_0(0,0,"spa...]
+Compiling architecture cnt_a of entity cnt [cnt_default]
+Compiling package std_logic_signed
+Compiling package xbip_pipe_v2_0_comp
+Compiling package xbip_accum_v2_0_pkg
+Compiling package mult_gen_pkg_v11_0
+Compiling package xbip_multaccum_pkg_v2_0
+Compiling architecture behavioral of entity xbip_pipe_v2_0 [\xbip_pipe_v2_0(0,1,0,0,1,0,0,"0...]
+Compiling architecture behavioral of entity xbip_multaccum_v2_0 [\xbip_multaccum_v2_0(0,"spartan6...]
+Compiling architecture macc_a of entity Macc [macc_default]
+Compiling architecture behavioral of entity psd
+Time Resolution for simulation is 1ps.
+Compiled 45 VHDL Units
+Built simulation executable D:/HU/DA_test/ect_master_3/psd_isim_beh.exe
+Fuse Memory Usage: 48732 KB
+Fuse CPU Usage: 2171 ms

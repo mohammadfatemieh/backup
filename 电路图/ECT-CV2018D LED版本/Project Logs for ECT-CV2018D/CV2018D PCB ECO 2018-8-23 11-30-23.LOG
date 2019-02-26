@@ -1,0 +1,8 @@
+Change Component Designator: OldDesignator=P1 NewDesignator=P2
+Added Pin To Net: NetName=VE Pin=P2-1
+Added Pin To Net: NetName=AGND Pin=P2-2
+Added Pin To Net: NetName=AGND Pin=P2-2
+Added Pin To Net: NetName=AGND Pin=P2-2
+Added Pin To Net: NetName=AGND Pin=P2-2
+Added Member To Class: ClassName=CVTOP Member=Component P2 SMB
+Added Room: Name=CVTOP

@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=AGND Pin=C15-1
+Removed Pin From Net: NetName=-12V Pin=C15-2
+Removed Pin From Net: NetName=+12V Pin=C23-1
+Removed Pin From Net: NetName=AGND Pin=C23-2
+Removed Member From Class: ClassName=CVTOP Member=C15
+Removed Member From Class: ClassName=CVTOP Member=C23

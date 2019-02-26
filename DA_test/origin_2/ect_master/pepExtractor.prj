@@ -1,0 +1,4 @@
+work	"AD9240.vhd"
+work	"ipcore_dir/Macc.vhd"
+work	"ipcore_dir/Macc1.vhd"
+work	"jietiao.vhd"

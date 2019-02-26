@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/HU/DA_test/ect_master_3/psd_isim_beh.exe" -prj "D:/HU/DA_test/ect_master_3/psd_beh.prj" "work.psd" 

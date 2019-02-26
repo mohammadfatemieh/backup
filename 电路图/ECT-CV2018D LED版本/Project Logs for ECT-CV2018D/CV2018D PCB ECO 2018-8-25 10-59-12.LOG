@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=AGND Pin=C89-1
+Removed Pin From Net: NetName=VCCO Pin=R77-2
+Removed Pin From Net: NetName=D9 Pin=R78-2
+Removed Pin From Net: NetName=AGND Pin=S2-1
+Removed Member From Class: ClassName=CVTOP Member=C89
+Removed Member From Class: ClassName=CVTOP Member=R76
+Removed Member From Class: ClassName=CVTOP Member=R77
+Removed Member From Class: ClassName=CVTOP Member=R78
+Removed Member From Class: ClassName=CVTOP Member=S2

@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=AGND Pin=J1-S1
+Removed Pin From Net: NetName=AGND Pin=J1-S2
+Removed Pin From Net: NetName=AGND Pin=J1-S3
+Removed Pin From Net: NetName=AGND Pin=J1-S3
+Removed Pin From Net: NetName=AGND Pin=J1-S4
+Removed Pin From Net: NetName=AGND Pin=J1-S4
+Change Component DesignItemId : Designator=J1 Old DesignItemId=Micro-USB New DesignItemId=1981568-1
+Change Component Footprint: Designator=J1 Old Footprint=USB Micro AB New Footprint=TECO-1981568-5_V
+Change Component Comment : Designator=J1 Old Comment=Micro-USB New Comment=1981568-1
+Added Pin To Net: NetName=AGND Pin=J1-6
+Added Pin To Net: NetName=AGND Pin=J1-7
+Added Pin To Net: NetName=AGND Pin=J1-8
+Added Pin To Net: NetName=AGND Pin=J1-9
+Added Pin To Net: NetName=AGND Pin=J1-10
+Added Pin To Net: NetName=AGND Pin=J1-11

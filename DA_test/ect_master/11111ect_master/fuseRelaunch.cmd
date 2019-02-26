@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/HU/ect_master/ect_master/ect_master_isim_beh.exe" -prj "D:/HU/ect_master/ect_master/ect_master_beh.prj" "work.ect_master" 

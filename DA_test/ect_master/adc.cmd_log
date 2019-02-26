@@ -1,0 +1,4 @@
+vhdtdtfi -prj ect_master -o D:/HU/ect_master/ect_master/adc.vhi -module adc -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Inst_ADC.vhd 
+vhdtdtfi -prj ect_master -o D:/HU/ect_master/ect_master/adc.vhi -module adc -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Inst_ADC.vhd 
+vhdtdtfi -prj ect_master -o D:/HU/ect_master/ect_master/adc.vhi -module adc -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Inst_ADC.vhd 
+vhdtdtfi -prj ect_master -o D:/HU/ect_master/ect_master/adc.vhi -module adc -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Inst_ADC.vhd 

@@ -1,0 +1,22 @@
+Added Component: Designator=P1(SMB_V-RJ45)
+Added Component: Designator=P1(SMB_V-RJ45)
+Added Component: Designator=R57(POT4MM-2)
+Added Pin To Net: NetName=VE Pin=P1-1
+Added Pin To Net: NetName=VO Pin=P1-1
+Added Pin To Net: NetName=AGND Pin=P1-2
+Added Pin To Net: NetName=AGND Pin=P1-2
+Added Pin To Net: NetName=AGND Pin=P1-2
+Added Pin To Net: NetName=AGND Pin=P1-2
+Added Pin To Net: NetName=AGND Pin=P1-2
+Added Pin To Net: NetName=AGND Pin=P1-2
+Added Pin To Net: NetName=AGND Pin=P1-2
+Added Pin To Net: NetName=AGND Pin=P1-2
+Added Pin To Net: NetName=VE Pin=P10-A32
+Added Pin To Net: NetName=VE Pin=P10-B32
+Added Pin To Net: NetName=VE Pin=P10-C32
+Added Pin To Net: NetName=VE Pin=R57-CCW
+Added Pin To Net: NetName=AGND Pin=R57-CW
+Added Pin To Net: NetName=VO Pin=R57-W
+Added Member To Class: ClassName=CVTOP Member=Component P1 SMB
+Added Member To Class: ClassName=CVTOP Member=Component R57 2K
+Added Room: Name=CVTOP

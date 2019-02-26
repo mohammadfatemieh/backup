@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=GND Pin=C9-1
+Removed Pin From Net: NetName=FOUT Pin=C10-2
+Change Component DesignItemId : Designator=R7 Old DesignItemId=0805 10K次 (1002) 1% New DesignItemId=0805 20K次 (2002) 1%
+Change Component DesignItemId : Designator=R8 Old DesignItemId=0805 10K次 (1002) 1% New DesignItemId=0805 20K次 (2002) 1%
+Change Component DesignItemId : Designator=C10 Old DesignItemId=0805 10nF (103) 10% 50V New DesignItemId=0805 100nF(104) 10% 50V
+Change Component DesignItemId : Designator=C9 Old DesignItemId=0805 10nF (103) 10% 50V New DesignItemId=0805 220nF (224) 10% 50V
+Change Component Comment : Designator=R7 Old Comment=10K次 (1002) ㊣1% New Comment=20K次 (2002) ㊣1%
+Change Component Comment : Designator=R8 Old Comment=10K次 (1002) ㊣1% New Comment=20K次 (2002) ㊣1%
+Change Component Comment : Designator=C10 Old Comment=10nF (103) 10% 50V New Comment=100nF(104) 10% 50V
+Change Component Comment : Designator=C9 Old Comment=10nF (103) 10% 50V New Comment=220nF (224) 10% 50V
+Added Pin To Net: NetName=FOUT Pin=C9-2
+Added Pin To Net: NetName=GND Pin=C10-1
+Change Net Name : Old Net Name=-5V New Net Name=0V
+Added Pin To Net: NetName=NetC9_1 Pin=C9-1
+Added Pin To Net: NetName=NetC9_1 Pin=R7-2
+Added Pin To Net: NetName=NetC9_1 Pin=R8-1
+Added Net: Name=NetC9_1
+Added Pin To Net: NetName=NetC10_2 Pin=C10-2
+Added Pin To Net: NetName=NetC10_2 Pin=R8-2
+Added Pin To Net: NetName=NetC10_2 Pin=U5-3
+Added Net: Name=NetC10_2

@@ -1,0 +1,5 @@
+vhdtdtfi -prj ect_master -o D:/HU/DA_test/ect_master_2/psd.vhi -module psd -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ipcore_dir/Macc.vhd -lib work ipcore_dir/cnt.vhd -lib work psd.vhd 
+vhdtdtfi -prj ect_master -o D:/HU/DA_test/ect_master_2/psd.vhi -module psd -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ipcore_dir/Macc.vhd -lib work ipcore_dir/cnt.vhd -lib work psd.vhd 
+vhdtdtfi -prj ect_master -o D:/HU/DA_test/ect_master_2/psd.vhi -module psd -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ipcore_dir/Macc.vhd -lib work ipcore_dir/cnt.vhd -lib work AD9240.vhd -lib work psd.vhd 
+vhdtdtfi -prj ect_master -o D:/HU/DA_test/ect_master_2/psd.vhi -module psd -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ipcore_dir/Macc.vhd -lib work ipcore_dir/cnt.vhd -lib work AD9240.vhd -lib work psd.vhd 
+vhdtdtfi -prj ect_master -o D:/HU/DA_test/ect_master_2/psd.vhi -module psd -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ipcore_dir/Macc.vhd -lib work ipcore_dir/cnt.vhd -lib work AD9240.vhd -lib work psd.vhd 

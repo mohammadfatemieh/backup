@@ -1,0 +1,9 @@
+[Inputs]
+UART_TX
+CLK
+rts
+=txd_data[15:0]=
+[Outputs]
+txd
+READ_DATA
+[BiDir]

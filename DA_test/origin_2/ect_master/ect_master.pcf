@@ -1,0 +1,50 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Oct 27 13:50:15 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+PIN Inst_clk/clkout3_buf_pin<1> = BEL "Inst_clk/clkout3_buf" PINNAME O;
+PIN "Inst_clk/clkout3_buf_pin<1>" CLOCK_DEDICATED_ROUTE = FALSE;
+NET
+        "mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/PC_Module_I/Using_FPGA.pc_write_I"
+        USELOWSKEWLINES;
+COMP "BTN" LOCATE = SITE "P8" LEVEL 1;
+COMP "RXD" LOCATE = SITE "H1" LEVEL 1;
+COMP "RTS" LOCATE = SITE "F1" LEVEL 1;
+COMP "TXD" LOCATE = SITE "F2" LEVEL 1;
+COMP "clk" LOCATE = SITE "N8" LEVEL 1;
+COMP "otr" LOCATE = SITE "J1" LEVEL 1;
+COMP "ADCLK" LOCATE = SITE "C13" LEVEL 1;
+COMP "DACLK" LOCATE = SITE "L13" LEVEL 1;
+COMP "DO<0>" LOCATE = SITE "P5" LEVEL 1;
+COMP "DO<1>" LOCATE = SITE "M2" LEVEL 1;
+COMP "DO<2>" LOCATE = SITE "N5" LEVEL 1;
+COMP "DO<3>" LOCATE = SITE "M1" LEVEL 1;
+COMP "DO<4>" LOCATE = SITE "N6" LEVEL 1;
+COMP "DO<5>" LOCATE = SITE "L2" LEVEL 1;
+COMP "DO<6>" LOCATE = SITE "P7" LEVEL 1;
+COMP "DO<7>" LOCATE = SITE "L1" LEVEL 1;
+COMP "DO<8>" LOCATE = SITE "P12" LEVEL 1;
+COMP "DO<9>" LOCATE = SITE "K2" LEVEL 1;
+COMP "pwait" LOCATE = SITE "B6" LEVEL 1;
+COMP "pwr" LOCATE = SITE "A7" LEVEL 1;
+COMP "DO<10>" LOCATE = SITE "N12" LEVEL 1;
+COMP "DO<11>" LOCATE = SITE "K1" LEVEL 1;
+COMP "DO<12>" LOCATE = SITE "L14" LEVEL 1;
+COMP "DO<13>" LOCATE = SITE "J2" LEVEL 1;
+COMP "astb" LOCATE = SITE "A6" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "N3" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "P3" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "N4" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "P4" LEVEL 1;
+COMP "dstb" LOCATE = SITE "B7" LEVEL 1;
+COMP "pdb<0>" LOCATE = SITE "B9" LEVEL 1;
+COMP "pdb<1>" LOCATE = SITE "A9" LEVEL 1;
+COMP "pdb<2>" LOCATE = SITE "B10" LEVEL 1;
+COMP "pdb<3>" LOCATE = SITE "A10" LEVEL 1;
+COMP "pdb<4>" LOCATE = SITE "B11" LEVEL 1;
+COMP "pdb<5>" LOCATE = SITE "A11" LEVEL 1;
+COMP "pdb<6>" LOCATE = SITE "B12" LEVEL 1;
+COMP "pdb<7>" LOCATE = SITE "A12" LEVEL 1;
+SCHEMATIC END;
+

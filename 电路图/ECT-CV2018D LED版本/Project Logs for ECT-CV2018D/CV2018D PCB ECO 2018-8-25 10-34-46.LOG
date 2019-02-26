@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=GCLK_P1 Pin=U23-1
+Removed Pin From Net: NetName=GCLK_P Pin=U23-2
+Removed Pin From Net: NetName=GCLK_N1 Pin=U23-3
+Removed Pin From Net: NetName=GCLK_N Pin=U23-4
+Added Pin To Net: NetName=GCLK_N1 Pin=U23-1
+Added Pin To Net: NetName=GCLK_N Pin=U23-2
+Added Pin To Net: NetName=GCLK_P1 Pin=U23-3
+Added Pin To Net: NetName=GCLK_P Pin=U23-4

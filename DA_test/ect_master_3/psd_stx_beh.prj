@@ -1,0 +1,4 @@
+vhdl isim_temp "ipcore_dir/Macc.vhd"
+vhdl isim_temp "ipcore_dir/cnt.vhd"
+vhdl isim_temp "AD9240.vhd"
+vhdl isim_temp "psd.vhd"

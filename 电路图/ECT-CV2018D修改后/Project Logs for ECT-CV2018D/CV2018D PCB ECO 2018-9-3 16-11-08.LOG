@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=GCLK_P Pin=P10-C16
+Removed Pin From Net: NetName=GCLK_N Pin=P10-C17
+Added Component: Designator=U23(LC-SOIC-14_150mil)
+Added Pin To Net: NetName=GCLK_N Pin=U23-2
+Added Pin To Net: NetName=GCLK_P Pin=U23-4
+Added Pin To Net: NetName=AGND Pin=U23-7
+Added Pin To Net: NetName=VCCO Pin=U23-14
+Added Pin To Net: NetName=GCLK_N1 Pin=P10-C17
+Added Pin To Net: NetName=GCLK_N1 Pin=U23-1
+Added Net: Name=GCLK_N1
+Added Pin To Net: NetName=GCLK_P1 Pin=P10-C16
+Added Pin To Net: NetName=GCLK_P1 Pin=U23-3
+Added Net: Name=GCLK_P1
+Added Member To Class: ClassName=CVTOP Member=Component U23 74HC14D

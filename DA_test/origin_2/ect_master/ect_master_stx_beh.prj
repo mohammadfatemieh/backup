@@ -1,0 +1,8 @@
+vhdl isim_temp "ipcore_dir/microblaze_mcs.vhd"
+vhdl isim_temp "ipcore_dir/dcm.vhd"
+vhdl isim_temp "ipcore_dir/dds.vhd"
+vhdl isim_temp "ipcore_dir/Macc.vhd"
+vhdl isim_temp "ipcore_dir/Macc1.vhd"
+vhdl isim_temp "AD9240.vhd"
+vhdl isim_temp "jietiao.vhd"
+vhdl isim_temp "ect_master.vhd"

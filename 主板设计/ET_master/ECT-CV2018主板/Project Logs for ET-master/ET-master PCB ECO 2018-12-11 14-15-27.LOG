@@ -1,0 +1,4 @@
+Change Component DesignItemId : Designator=C15 Old DesignItemId=Cap Pol3 New DesignItemId=Ó„µÁ»›
+Change Component Comment : Designator=C15 Old Comment=Cap Pol3 New Comment=22uF
+Change Component Description : Designator=C15 Old Description=Polarized Capacitor (Surface Mount) New Description=
+Change Component Library : Designator=C15 Old Library=Miscellaneous Devices.IntLib New Library=Ó„µÁ»›.IntLib

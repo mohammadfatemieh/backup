@@ -1,0 +1,42 @@
+Removed Pin From Net: NetName=GND Pin=D1-K
+Removed Pin From Net: NetName=-2.5V Pin=D11-1
+Removed Pin From Net: NetName=+2.5V Pin=D11-2
+Removed Pin From Net: NetName=NetC10_2 Pin=D11-3
+Removed Pin From Net: NetName=KEY Pin=R30-1
+Removed Pin From Net: NetName=VCCO Pin=R30-2
+Removed Pin From Net: NetName=+2.5V Pin=R31-1
+Removed Pin From Net: NetName=+5V Pin=R31-2
+Removed Pin From Net: NetName=-5V Pin=R32-1
+Removed Pin From Net: NetName=-2.5V Pin=R32-2
+Removed Pin From Net: NetName=DGND Pin=R33-1
+Removed Pin From Net: NetName=AGND Pin=R33-2
+Change Component DesignItemId : Designator=D1 Old DesignItemId=0805 ºìµÆ New DesignItemId=SOT-23 BAV99 A7W
+Change Component DesignItemId : Designator=D11 Old DesignItemId=SOT-23 BAV99 A7W New DesignItemId=0805 ºìµÆ
+Change Component Footprint: Designator=D1 Old Footprint=LC-0805_LED_S1 New Footprint=LC-SOT-23(SOT-23-3)
+Change Component Footprint: Designator=D11 Old Footprint=LC-SOT-23(SOT-23-3) New Footprint=LC-0805_LED_S1
+Change Component Comment : Designator=D11 Old Comment=HSMS 2822 New Comment=ºìµÆ 0805
+Change Component Comment : Designator=D1 Old Comment=ºìµÆ 0805 New Comment=HSMS 2822
+Added Component: Designator=R30(LC-0805_R)
+Added Component: Designator=R31(LC-0805_R)
+Added Component: Designator=R32(LC-0805_R)
+Added Component: Designator=R33(LC-0805_R)
+Added Pin To Net: NetName=-2.5V Pin=D1-1
+Added Pin To Net: NetName=+2.5V Pin=D1-2
+Added Pin To Net: NetName=NetC10_2 Pin=D1-3
+Added Pin To Net: NetName=GND Pin=D11-K
+Added Pin To Net: NetName=KEY Pin=R30-1
+Added Pin To Net: NetName=VCCO Pin=R30-2
+Added Pin To Net: NetName=+2.5V Pin=R31-1
+Added Pin To Net: NetName=+5V Pin=R31-2
+Added Pin To Net: NetName=-5V Pin=R32-1
+Added Pin To Net: NetName=-2.5V Pin=R32-2
+Added Pin To Net: NetName=DGND Pin=R33-1
+Added Pin To Net: NetName=AGND Pin=R33-2
+Added Pin To Net: NetName=NetD11_A Pin=D11-A
+Added Pin To Net: NetName=NetD11_A Pin=R2-2
+Added Net: Name=NetD11_A
+Added Member To Class: ClassName=CVTOP Member=Component D11 ºìµÆ 0805
+Added Member To Class: ClassName=CVTOP Member=Component R30 1K¦¸ (1001) ¡À1%
+Added Member To Class: ClassName=CVTOP Member=Component R31 3K¦¸ (3001) ¡À1%
+Added Member To Class: ClassName=CVTOP Member=Component R32 3K¦¸ (3001) ¡À1%
+Added Member To Class: ClassName=CVTOP Member=Component R33 0¦¸ (0R0) ¡À1%

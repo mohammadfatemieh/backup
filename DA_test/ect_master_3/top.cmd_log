@@ -1,0 +1,1 @@
+vhdtdtfi -prj ect_master -o D:/git/ect_master/ect_master/top.vhi -module top -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work gpo.vhd 

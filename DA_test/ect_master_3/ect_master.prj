@@ -1,0 +1,8 @@
+vhdl work "ipcore_dir/microblaze_mcs.vhd"
+vhdl work "ipcore_dir/dcm.vhd"
+vhdl work "ipcore_dir/dds.vhd"
+vhdl work "ipcore_dir/Macc.vhd"
+vhdl work "ipcore_dir/cnt.vhd"
+vhdl work "AD9240.vhd"
+vhdl work "psd.vhd"
+vhdl work "ect_master.vhd"

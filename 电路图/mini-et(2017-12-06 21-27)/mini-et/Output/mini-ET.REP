@@ -1,0 +1,68 @@
+*************************************************************
+FileName = mini-ET.PcbDoc
+ODB++ directory structure
+*************************************************************
+Generated File : D:\PROJ\ET\mini-et\Output\odb\matrix\matrix
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\profile
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\stephdr
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\attrlist
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\topoverlay\features
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\topoverlay\attrlist
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\toppaste\features
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\toppaste\attrlist
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\topsolder\features
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\topsolder\attrlist
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\toplayer\features
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\toplayer\attrlist
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\gnd\features
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\gnd\attrlist
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\power\features
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\power\attrlist
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\bottomlayer\features
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\bottomlayer\attrlist
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\bottomsolder\features
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\bottomsolder\attrlist
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\drill\features
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\drill\attrlist
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\drill\tools
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\mechanical1\features
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\mechanical1\attrlist
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\mechanical13\features
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\mechanical13\attrlist
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\mechanical15\features
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\mechanical15\attrlist
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\comp_+_top\features
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\layers\comp_+_top\components
+
+Generated File : D:\PROJ\ET\mini-et\Output\odb\steps\pcb\eda\data
+
